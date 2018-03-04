@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- inherit custom footer    -->
+    <template id="seo_footer" inherit_id="website.footer_custom" customize_show="True" name="SEO Automatic Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="container hidden-print">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <strong class="seo_title4">Our Products &amp; Services</strong>
+                        <div>
+                            <p>
+                        <ul class="list-unstyled" id="products">
+                            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/';">Home</button></li>
+                        </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-lg-3" id="info">
+                        <strong class="seo_title4">Connect with us</strong>
+                        <ul class="list-unstyled">
+                            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/page/website.contactus';">Contact us</button></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li t-ignore="true"><i class="fa fa-phone"></i> <span t-field="res_company.phone"></span></li>
+                            <li t-ignore="true"><i class="fa fa-envelope"></i>  <span t-field="res_company.email"></span></li>
+                        </ul>
+                        <strong class="seo_title2">
+                            <button type="button" 
+                                    class="seo_obfuscated_link" 
+                                    t-attf-onclick="javascript:location.href='{{ website.social_facebook }}';" 
+                                    t-if="website.social_facebook">
+                                <i class="fa fa-facebook-square"/></button>
+                            <button type="button" 
+                                    class="seo_obfuscated_link"
+                                    t-attf-onclick="javascript:location.href='{{ website.social_twitter }}';" 
+                                    t-if="website.social_twitter">
+                                <i class="fa fa-twitter"/></button>
+                            <button type="button" 
+                                    class="seo_obfuscated_link"
+                                    t-attf-onclick="javascript:location.href='{{ website.social_linkedin }}';" 
+                                    t-if="website.social_linkedin">
+                                <i class="fa fa-linkedin"/></button>
+                            <button type="button" 
+                                    class="seo_obfuscated_link"
+                                    t-attf-onclick="javascript:location.href='{{ website.social_youtube }}';" 
+                                    t-if="website.social_youtube">
+                                <i class="fa fa-youtube-play"/></button>
+                            <button type="button" 
+                                    class="seo_obfuscated_link"
+                                    t-attf-onclick="javascript:location.href='{{ website.social_googleplus }}';" 
+                                    t-if="website.social_googleplus" rel="publisher">
+                                <i class="fa fa-google-plus-square"/></button>
+                            <button type="button" 
+                                    class="seo_obfuscated_link"
+                                    t-attf-onclick="javascript:location.href='{{ website.social_github }}';" 
+                                    t-if="website.social_github">
+                                <i class="fa fa-github"/></button>
+                        </strong>
+                    </div>
+                    <div class="col-md-4 col-lg-5 col-lg-offset-1">
+                        <strong class="seo_title4">
+                            <span t-field="res_company.name" />
+                             — <button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/page/website.aboutus';"><small>About us</small></button>
+                        </strong>
+                        <div>
+                            <p>
+                                We are a team of passionate people whose goal is to improve everyone's
+                                life through disruptive products. We build great products to solve your
+                                business problems.
+                            </p>
+                            <p>
+                                Our products are designed for small to medium size companies willing to optimize
+                                their performance.
+                            </p>
+                        </div>
+                        <t t-call="website.language_selector"/>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+<!-- TODO custom footer -->
+
+</odoo>
