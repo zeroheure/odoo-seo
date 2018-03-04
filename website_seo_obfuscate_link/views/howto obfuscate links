@@ -1,0 +1,14 @@
+Solutions to obfuscate links using a button
+
+With JS
+<form><input type="button" onclick="window.location.href = 'uri';" value="Link label"/></form>
+<button onclick="window.location.href = 'uri';">Link label</button>
+
+Without JS
+The next two work with input type=submit but not with button nor input type=button (march 2018)
+<form action="uri"><input type="submit" value="Link label" /></form>
+<form><input type="submit" formaction="uri" value="Link label" /></form>
+
+
+See
+https://www.designcise.com/web/tutorial/how-to-create-an-html-button-that-acts-like-a-link
