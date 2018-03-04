@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Xavier brochard <zeroheure@zeroheure.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="seo_breadcrumb" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='wrap']//ol" position="replace">
+            <h6 class="breadcrumb">
+                <div itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
+                <a t-att-href="keep(category=0)" itemprop="url">
+                    <span itemprop="title" t-field="websitetopcategory.seobreadcrumb.name"/>
+                </a>
+                <t t-if="category">
+                    / <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" itemprop="url">
+                        <span itemprop="title" t-field="category.name"/>
+                    </a>
+                </t>
+                    / <span class="active" itemprop="title" t-field="product.name"/>
+                </div>
+            </h6>
+        </xpath>
+  </template>
+</odoo>

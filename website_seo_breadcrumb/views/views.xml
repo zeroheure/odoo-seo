@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Xavier brochard <zeroheure@zeroheure.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data>
+        <act_window id="seo_breadcrumb_action" name="Breadcrumb title" res_model="seobreadcrumb" />
+            
+         <record model="ir.ui.view" id="seo_breadcrumb_form_view">
+            <field name="name">seobreadcrumb.form</field>
+            <field name="model">seobreadcrumb</field>
+            <field name="arch" type="xml">
+                <form string="Breadcrumb">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+<!--                            <field name="help" type="html">
+                                <p class="oe_view_nocontent_create">This will be the Breadcrumb top value, default is Products</p>
+                            </field>-->
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- top level menu: no parent -->
+        <menuitem id="main_seo_menu" name="SEO"/>
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <menuitem id="seo_breadcrumb_menu" name="Breadcrumb"
+                  parent="main_seo_menu"/>
+        <menuitem id="breadcrumb_name_menu" name="Name" parent="seo_breadcrumb_menu"
+                  action="seo_breadcrumb_action"/>
+    </data>
+</odoo>
