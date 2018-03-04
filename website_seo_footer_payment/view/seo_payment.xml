@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="remove_payment" inherit_id="header_footer_custom_payment" name="Remove Payment Method">
+        <xpath expr="(//footer//div[@id='info'])" position="replace"/>
+    </template>
+        <template id="header_footer_custom_payment" inherit_id="website.footer_default" customize_show="True" active="False" name="Payment Methods">
+            <xpath expr="//div[@id='info']" position="inside">
+                <span class="seo_title4 payment_method_title">Payment Method</span>
+                <ul class="payment_method_list list-inline">
+                    <t t-foreach="request.website.payment_acquirers()" t-as="acquirer">
+                        <li>
+                            <span t-field="acquirer.image_small" t-options='{"widget": "image", "alt-field": "name"}' />
+                        </li>
+                    </t>
+                </ul>
+            </xpath>
+        </template>
+
+</odoo>
