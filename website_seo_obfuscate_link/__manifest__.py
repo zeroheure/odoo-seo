@@ -15,7 +15,6 @@
         "website",
     ],
     "data": [
-        "views/s_obfuscate.xml",
         "views/assets.xml",
     ],
 }
