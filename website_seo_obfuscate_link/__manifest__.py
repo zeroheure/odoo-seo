@@ -2,8 +2,8 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "SEO Obfuscate Links",
-    "summary": "Snippet to obfuscate links from search engines (for Page Rank Sculpture).",
+    "name": "SEO Extend web editor",
+    "summary": "Extend web editor to obfuscate links from search engines (for Page Rank Sculpture).",
     "version": "10.0.1.0.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
