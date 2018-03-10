@@ -3,13 +3,10 @@
    :alt: License: LGPL-3
 
 ======================
-Website SEO Breadcrumb
+Website SEO Payments Footer
 ======================
 
-Odoo build breadcrumbs using Bootstrap html. It miss structured datas.
-Here we build breadcrumb using structured datas as recommended by Google,
-and heading tags (<h6>) for better SEO.
-
+Remove Heading tag (H4) from payments list in footer.
 
 Contributors
 ------------
