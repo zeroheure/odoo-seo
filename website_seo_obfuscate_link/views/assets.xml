@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="seoobfuscatelink" name="SEO Obfuscate Link" inherit_id="web_editor.summernote">
+    <template id="seoobfuscatelink" name="SEO Obfuscate Link" inherit_id="website.assets_frontend">
         <xpath expr="script[last()]" position="after">
             <link href="/website_seo_obfuscate_link/static/less/seo_obfuscate_link.less" rel="stylesheet" type="text/less"/>
-            <script type="text/javascript" src="/website_seo_obfuscate_link/static/lib/summernote-add-text-tags.js"></script>
         </xpath>
     </template>
-    <template id="seo_extend_rte" name="SEO Extend RTE" inherit_id="web_editor.assets_editor">
-        <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/website_seo_obfuscate_link/static/src/js/website_seo_obfuscate_link.js"></script>
-        </xpath>
-    </template>
+
 
 </odoo>

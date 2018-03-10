@@ -10,10 +10,10 @@ odoo.define('website_seo_obfuscate_link.rte', function (require) {
     rte.Class.include({
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
-            config.plugin : {};
+            //config.plugin : {};
             //config.plugin(require) {('summernote-add-text-tags.js');};
                 //{ ajax.loadJS('/website_seo_obfuscate_link/static/lib/summernote-add-text-tags.js'); };
-            config.airPopover.splice(1, 1, ['font', ['bold', 'italic', 'clear']]);
+            config.airPopover.splice(1, 1, ['font', ['bold', 'italic', 'underline', 'clear']]);
             return config;
         }
     });
@@ -25,7 +25,6 @@ odoo.define('website_seo_obfuscate_link.rte', function (require) {
     * web_editor/static/src/js/backend.js 
     */
 });
-
 
 
 
