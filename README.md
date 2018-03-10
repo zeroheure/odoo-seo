@@ -19,6 +19,6 @@ website_seo_no_dust        | 10.0.1.0.0 |     Remove URLs parameters
 
 
 
-For SEO badvices see http://www.abondance.com (french)
+For SEO advices see http://www.abondance.com (french)
 
 For more informations see http://zeroheure.info 
