@@ -17,5 +17,8 @@ website_seo_footer_payment | 10.0.1.0.0 |     Remode headings
 website_seo_obfuscate_link | 10.0.1.0.0 |     Provide CSS and add obfuscate tool in web-editor
 website_seo_no_dust        | 10.0.1.0.0 |     Remove URLs parameters
 
+
+
 For SEO badvices see http://www.abondance.com (french)
+
 For more informations see http://zeroheure.info 
