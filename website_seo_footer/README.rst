@@ -6,17 +6,20 @@
 Website SEO Footer
 ======================
 
-This module remove Heading tags in footer(H1, H2, ...) and obfuscate default links from search engines (for Page Rank Sculpture) in footer.
-
-Footer links are not the biggest SEO problem, but they have bad effect on page rank, as you should allways cnotrol what pages got page rank from important pages.
-TROUVER UN LIEN EXPLICATIF
+This module remove Heading tags and obfuscate default links from search engines (for Page Rank Sculpture).
 
 Headings in footer break the page readibility for search engines and thus, should be avoid.
 
-One should install also
+Footer links are not the biggest SEO problem, but they have bad effect on page rank, as you should allways control what pages got page rank from important pages. TROUVER UN LIEN EXPLICATIF
+
+
+For complete SEO footer one should install also
 * footer payment if you innstall ecommerce payment
-* footer blog
-* etc.
+* footer news blog
+* footer Partners
+* footer customer references
+
+
 
 Contributors
 ------------
