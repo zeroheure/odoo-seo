@@ -3,13 +3,13 @@
    :alt: License: LGPL-3
 
 ======================
-Website SEO Breadcrumb
+Website SEO Obfuscate link
 ======================
 
-Odoo build breadcrumbs using Bootstrap html. It miss structured datas.
-Here we build breadcrumb using structured datas as recommended by Google,
-and heading tags (<h6>) for better SEO.
+Extend web editor to gives you the abpility to obfuscate links from search engines (for Page Rank Sculpture). 
 
+The CSS use theme color for links. If you need to change it, look for seo_obfuscated_link class inside the file
+/website_seo_obfuscate_link/static/less/seo_obfuscated_link.less
 
 Contributors
 ------------

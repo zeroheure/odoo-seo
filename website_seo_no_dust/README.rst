@@ -22,7 +22,7 @@ Contributors
 Maintainer
 ----------
 
-   :alt: ZeroHeure
-   :target: https://zeroheure.info
+ZeroHeure
+https://zeroheure.info
 
 
