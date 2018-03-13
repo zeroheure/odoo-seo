@@ -1,7 +1,0 @@
-<odoo>
-    <data>
-        <record model="breadcrumb.title" id="title0">
-            <field name="name">Products</field>
-        </record>
-    </data>
-</odoo>

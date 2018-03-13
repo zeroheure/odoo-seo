@@ -15,8 +15,6 @@
         "website_sale",
     ],
     "data": [
-        #"data/default.xml",
         "views/templates.xml",
-        "views/views.xml",
     ],
 }

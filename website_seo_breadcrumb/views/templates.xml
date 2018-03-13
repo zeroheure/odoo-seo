@@ -6,9 +6,7 @@
         <xpath expr="//div[@id='wrap']//ol" position="replace">
             <h6 class="breadcrumb">
                 <div itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
-                <a t-att-href="keep(category=0)" itemprop="url">
-                    <span itemprop="title" t-field="websitetopcategory.seobreadcrumb.name"/>
-                </a>
+                <a t-att-href="keep(category=0)" itemprop="url">Products</a>
                 <t t-if="category">
                     / <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" itemprop="url">
                         <span itemprop="title" t-field="category.name"/>
