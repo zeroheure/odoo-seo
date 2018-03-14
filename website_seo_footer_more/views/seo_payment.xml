@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- payment -->
+    <template id="remove_payment" inherit_id="website_payment.header_footer_custom_payment" name="Remove Payment Method">
+        <xpath expr="(//footer//div[@id='info'])" position="replace"/>
+    </template>
+
+    <template id="footer_payment" inherit_id="website_seo_footer.footer_default" customize_show="True" active="True" name="SEO Payment Methods">
+        <xpath expr="//div[@id='info']" position="inside">
+            <strong class="seo_title4 payment_method_title">Payment Method</strong>
+            <ul class="payment_method_list list-inline">
+                <t t-foreach="request.website.payment_acquirers()" t-as="acquirer">
+                    <li>
+                        <span t-field="acquirer.image_small" t-options='{"widget": "image", "alt-field": "name"}' />
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+    </template>
+<!-- news (blog) -->
+    <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" name="SEO Footer News Blog Link">
+        <xpath expr="//div[@id='info']/ul" position="inside">
+            <li><a t-attf-href="/blog/%(website_blog.blog_blog_1)d">News</a></li>
+        </xpath>
+    </template>
+        
+</odoo>
