@@ -34,7 +34,7 @@
     </template>
 
     <!-- inherit custom footer    -->
-    <template id="footer_default" inherit_id="footer_custom" customize_show="True" name="SEO Automatic Footer">
+    <template id="footer_default" inherit_id="footer_custom" customize_show="True" active="True" name="SEO Automatic Footer">
         <xpath expr="//div[@id='footer']" position="replace">
             <div id="footer" class="container hidden-print">
                 <div class="row">
