@@ -1,10 +1,4 @@
-.. image:: https://img.shields.io/badge/licence-LGPL--3-blue.svg
-   :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
-   :alt: License: LGPL-3
-
-======================
-Website SEO Footer
-======================
+# Website SEO Footer
 
 This module remove Heading tags and obfuscate default links from search engines (for Page Rank Sculpture) :
 
@@ -21,15 +15,13 @@ For complete SEO footer one should install also
 - SEO Footer More (website_seo_footer_more)
 - SEO Footer Payments (website_seo_footer_payments)
 
-Contributors
-------------
+## Contributors
 
 - Xavier Brochard zeroheure@zeroheure.info
 
-Maintainer
-----------
+## Maintainer
 
 ZeroHeure
 https://zeroheure.info
 
-
+Please, report bugs at https://github.com/zeroheure/odoo-seo/issues
