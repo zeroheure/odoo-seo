@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="webeditor_texttagplugin" name="Web editor Text tags plugin" inherit_id="web_editor.summernote">
+    <template id="texttagplugin" name="Web editor Text tags plugin" inherit_id="web_editor.summernote">
         <xpath expr="script[last()]" position="after">
             <link href="/website_extend_web_editor/static/less/summernote_text_tags_plugin.less" rel="stylesheet" type="text/less"/>
             <!--<script type="text/javascript" src="/website_extend_web_editor/static/lib/summernote-add-text-tags.js"></script>-->
         </xpath>
     </template>
-    <template id="website_extend_rte" name="Extend RTE" inherit_id="web_editor.assets_editor">
+    <template id="extend_rte" name="Extend RTE" inherit_id="web_editor.assets_editor">
         <xpath expr="script[last()]" position="after">
             <script type="text/javascript" src="/website_extend_web_editor/static/src/js/extend_rte.js"></script>
         </xpath>
