@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Payment Methods -->
+    <template id="remove_payment" inherit_id="website_payment.header_footer_custom_payment" name="Remove Payment Method">
+        <xpath expr="(//footer//div[@id='info'])" position="replace"/>
+    </template>
+
+    <template id="footer_payment" inherit_id="website_seo_footer.footer_default" customize_show="True" active="True" name="SEO Payment Methods">
+        <xpath expr="//div[@id='info']" position="inside">
+            <strong class="seo_title4 payment_method_title">Payment Method</strong>
+            <ul class="payment_method_list list-inline">
+                <t t-foreach="request.website.payment_acquirers()" t-as="acquirer">
+                    <li>
+                        <span t-field="acquirer.image_small" t-options='{"widget": "image", "alt-field": "name"}' />
+                    </li>
+                </t>
+            </ul>
+        </xpath>
+    </template>
+<!-- Footer News Blog Link in website_blog -->
+    <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" name="SEO Footer News Blog">
+        <xpath expr="//div[@id='info']/ul" position="inside">
+            <li><button type="button" class="seo_obfuscated_link" 
+                        t-attf-onclick="javascript:location.href='/blog/{{ %(website_blog.blog_blog_1)d }}';">News</button></li>
+        </xpath>
+    </template>
+<!-- Footer Partners Link in website_crm_partner_assign -->
+    <template id="footer_partner_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Partners">
+        <xpath expr="//div[@id='info']/ul" position="inside">
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/partners';">Resellers</button></li>
+        </xpath>
+    </template>
+<!-- Customer References Link in website_customer-->
+    <template id="footer_references_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Customer References">
+        <xpath expr="//div[@id='info']/ul" position="inside">
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/customers';">Our References</button></li>
+        </xpath>
+    </template>
+
+
+</odoo>
