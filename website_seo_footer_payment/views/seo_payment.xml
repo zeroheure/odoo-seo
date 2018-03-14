@@ -4,7 +4,7 @@
             <xpath expr="(//footer//div[@id='info'])" position="replace"/>
         </template>
 
-        <template id="footer_payment" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Payment Methods">
+        <template id="footer_payment" inherit_id="website_seo_footer.footer_default" customize_show="True" active="True" name="SEO Payment Methods">
             <xpath expr="//div[@id='info']" position="inside">
                 <strong class="seo_title4 payment_method_title">Payment Method</strong>
                 <ul class="payment_method_list list-inline">
