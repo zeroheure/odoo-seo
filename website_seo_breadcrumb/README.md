@@ -1,8 +1,10 @@
 # Website SEO Breadcrumb
 
-Odoo build breadcrumbs using Bootstrap html. It miss structured datas.
-Here we build breadcrumb using structured datas as recommended by Google,
-and heading tags (<h6>) for better SEO.
+Odoo build breadcrumbs as a Bootstrap component. It miss structured datas.
+
+This module build breadcrumb with Heading tag (&lt;h6&gt;) to give more importance to its keywords.
+
+Additionaly, elements are structured with schema.org microdatas as recommended by Google. This will improve search result pages (SERP).
 
 
 ## Contributors
