@@ -5,15 +5,24 @@
     <template id="seo_breadcrumb" inherit_id="website_sale.product">
         <xpath expr="//div[@id='wrap']//ol" position="replace">
             <h6 class="breadcrumb">
-                <div itemscope="itemscope" itemtype="https://data-vocabulary.org/Breadcrumb">
-                <a t-att-href="keep(category=0)" itemprop="url">Products</a>
-                <t t-if="category">
-                    / <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" itemprop="url">
-                        <span itemprop="title" t-field="category.name"/>
-                    </a>
-                </t>
-                    / <span class="active" itemprop="title" t-field="product.name"/>
-                </div>
+                <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a t-att-href="keep(category=0)" itemprop="url"><span itemprop="name">Products</span></a>
+                        <meta itemprop="position" content="1" t-set="p" t-value="1" />
+                    </span>
+                    <t t-if="category">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" itemprop="url">
+                            <span itemprop="name" t-field="category.name" />
+                        </a>
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" t-set="p" t-value="p+1" />
+                    </span>
+                    </t>
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <span class="active" itemprop="name" t-field="product.name" />
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" />
+                    </span>
+                </span>
             </h6>
         </xpath>
   </template>
