@@ -13,8 +13,9 @@
     "installable": True,
     "depends": [
         "web_editor",
+        
     ],
-    #"data": [
-        #"views/assets.xml",
-    #],
+    "data": [
+        "views/assets.xml",
+    ],
 }
