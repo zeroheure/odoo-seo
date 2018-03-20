@@ -2,10 +2,9 @@
 
 Odoo build breadcrumbs as a Bootstrap component. It miss structured datas.
 
-This module build breadcrumb with Heading tag (&lt;h6&gt;) to give more importance to its keywords.
+With this module elements are structured by schema.org microdatas as recommended by Google. This will improve search result pages (SERP).
 
-Additionaly, elements are structured with schema.org microdatas as recommended by Google. This will improve search result pages (SERP).
-
+Additionaly, the module build breadcrumb with Heading tag (<h6>) to give more importance to its keywords.
 
 ## Contributors
 
