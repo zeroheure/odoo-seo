@@ -4,7 +4,7 @@
 <template id="assets" inherit_id="website.assets_editor" name="Website Editor Assets">
 <!--     <xpath expr="//script[@src='/website/static/src/js/website.seo.js']" position="replace"> -->
     <xpath expr=".">
-        <script type="text/javascript" src="/website_seo_header/static/src/js/header.js"></script>
+        <script type="text/javascript" src="/website_seo_meta_size/static/src/js/header.js"></script>
     </xpath>
 </template>
 
