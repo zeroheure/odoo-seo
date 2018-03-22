@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright Xavier Brochard <xavier@zeroheure.info>
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
 <templates id="template" xml:space="preserve">
-
     <t t-extend="website.seo_configuration">
-        <t t-jquery="input" t-operation="replace">
+        <t t-jquery="input[name='seo_page_title']" t-operation="replace">
             <!-- site name must be in the first 600 pixels, Title size is not otherwise limited  -->
             <input type="text" name="seo_page_title" class="form-control" t-att-maxlength="widget.maxTitleSize" size="70"/>
         </t>
         <t t-jquery="textarea" t-operation="replace">
             <!-- Google truncate to nearly 300 characters (november 2017) -->
-            <textarea name="seo_page_description" class="form-control" rows="3" cols="70" t-att-maxlength="widget.maxDescriptionSize"/>
+            <textarea name="seo_page_description" class="form-control" rows="5" cols="70" t-att-maxlength="widget.maxDescriptionSize"/>
         </t>
     </t>
 
