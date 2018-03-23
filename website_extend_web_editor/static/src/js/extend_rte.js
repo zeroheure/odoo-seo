@@ -41,7 +41,7 @@ odoo.define('website_extend_web_editor.extend_rte', function (require) {
     // font 'strikethrough', 'superscript', 'subscript', 'fontname'
     // para 'height'
     // insert 'hr'
-    // autre 'codeview'
+    // others 'codeview'
     
     /* Backend
     * FieldTextHtml Widget 
