@@ -1,29 +1,7 @@
 odoo.define('website_extend_web_editor.extend_rte', function (require) {
     'use strict';
-    //var ajax = require("web.ajax");
-    //var core = require("web.core");
     var rte = require('web_editor.rte');
 
-    
-//     context.memo('button.extend-rte', function () {
-//         return ui.buttonGroup([
-//             ui.button({
-//                 className: 'dropdown-toggle',
-//                 contents: '<b>+</b> ' + ui.icon(options.icons.caret, 'span'),
-//                 tooltip: 'Additional text styles',
-//                 data: {
-//                     toggle: 'dropdown'
-//                 }
-//             }),
-//             ui.dropdown([
-//                 ui.buttonGroup({
-//                     className: 'note-add-text-tags-code',
-//                     children: [strikethrough, superscript, subscript, hr, height, codeview]
-//                 }),
-//             ])
-//         ]).render();
-//     });
-    
     rte.Class.include({
 
         config: function ($editable) {
