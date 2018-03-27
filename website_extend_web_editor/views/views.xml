@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="website_extend_web_editor.list">
+      <field name="name">summernote_config list</field>
+      <field name="model">summernote.config</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="strikethrough"/>
+          <field name="superscript"/>
+          <field name="subscript"/>
+          <field name="hr"/>
+          <field name="height"/>
+          <field name="codeview"/>
+        </tree>
+      </field>
+    </record>
+    
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="website_extend_web_editor.action_window">
+      <field name="name">summernote_config window</field>
+      <field name="res_model">summernote.config</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="extend_web_editor.action_server">
+      <field name="name">extend_web_editor server</field>
+      <field name="model_id" ref="model_extend_web_editor_extend_web_editor"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->    
+    <menuitem name="website_extend_web_editor" id="website_extend_web_editor.menu_root"/>
+    
+    <!-- menu categories -->    
+    <menuitem name="Menu 1" id="website_extend_web_editor.menu_1" parent="website_extend_web_editor.menu_root"/>
+<!--     <menuitem name="Menu 2" id="extend_web_editor.menu_2" parent="extend_web_editor.menu_root"/> -->
+    
+    <!-- actions -->    
+    <menuitem name="List" id="website_extend_web_editor.menu_list" parent="website_extend_web_editor.menu_1"
+              action="website_extend_web_editor.action_window"/>
+<!--    <menuitem name="Server to list" id="extend_web_editor" parent="extend_web_editor.menu_2"
+              action="extend_web_editor.action_server"/>-->
+    
+  </data>
+</odoo>

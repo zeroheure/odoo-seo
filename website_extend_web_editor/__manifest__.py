@@ -4,7 +4,7 @@
 {
     "name": "Extend web editor",
     "summary": "Extend web editor.",
-    "version": "10.0.1.0.0",
+    "version": "10.0.0.1.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
     "author": "Xavier Brochard, zeroheure.info",
@@ -17,5 +17,6 @@
     ],
     "data": [
         "views/assets.xml",
+        "views/views.xml",
     ],
 }
