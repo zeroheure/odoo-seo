@@ -5,19 +5,16 @@
 from odoo import models, fields, api
 
 class SummernoteConfig(models.Model):
-     _name = 'summernote.config'
+    _name = 'website_extend_web_editor.summernote_config'
+    _inherit = 'website.config.settings'
 
-     name = fields.Char(string="test")
-     strikethrough = fields.Boolean(string="strike")
-     superscript = fields.Boolean(string="sup")
-     subscript = fields.Boolean(string="sub")
-     hr = fields.Boolean(string="hr line")
-     height = fields.Boolean(string="line height")
-     codeview = fields.Boolean(string="html code")
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+    summernote_settings = fields.Boolean(
+        string='Summernote web editor', 
+        help="Show / hide Summernote additional parameters."
+    )
+    summernote_strikethrough = fields.Boolean(string="Strike")
+    summernote_superscript = fields.Boolean(string="Sup")
+    summernote_subscript = fields.Boolean(string="Sub")
+    summernote_hr = fields.Boolean(string="Line (hr)")
+    summernote_height = fields.Boolean(string="Line height")
+    summernote_codeview = fields.Boolean(string="Show html")
