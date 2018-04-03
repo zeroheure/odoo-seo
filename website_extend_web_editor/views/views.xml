@@ -1,73 +1,19 @@
 <odoo>
   <data>
-<!-- summernote options -->
-    <record model="ir.ui.view" id="view_extend_web_editor_config">
-        <field name="name">Web editor Settings</field>
-        <field name="model">website_extend_web_editor.summernote_config</field>
-        <field name="inherit_id" ref="website.view_website_config_settings"/>
-        <field name="arch" type="xml">
-            <xpath expr="//group[last()]" position="after">
-                <group string="Extend Web Editor" name="Web Editor Settings">
-                    <label for="summernote_settings" string="Summernote Web Editor"/>
-                    <div>
-                        <field name="summernote_settings" class="oe_inline"/>
-                        <label for="summernote_settings"/>
-                    </div>
-                    <label   for="summernote_strikethrough" attrs="{'invisible': [('summernote_settings','=',False)]}"/>
-                    <div    name="summernote_strikethrough" attrs="{'invisible': [('summernote_settings','=',False)]}">
-                        <field name="summernote_strikethrough" attrs="{'invisible': [('summernote_settings','=',False)]}" class="oe_inline"/>
-                    </div>
-
-                    <label   for="summernote_superscript" attrs="{'invisible': [('summernote_settings','=',False)]}"/>
-                    <div    name="summernote_superscript" attrs="{'invisible': [('summernote_settings','=',False)]}">
-                        <field name="summernote_superscript" attrs="{'invisible': [('summernote_settings','=',False)]}" class="oe_inline"/>
-                    </div>
-
-                    <label   for="summernote_subscript" attrs="{'invisible': [('summernote_settings','=',False)]}"/>
-                    <div    name="summernote_subscript" attrs="{'invisible': [('summernote_settings','=',False)]}">
-                        <field name="summernote_subscript" attrs="{'invisible': [('summernote_settings','=',False)]}" class="oe_inline"/>
-                    </div>
-
-                    <label   for="summernote_hr" attrs="{'invisible': [('summernote_settings','=',False)]}"/>
-                    <div    name="summernote_hr" attrs="{'invisible': [('summernote_settings','=',False)]}">
-                        <field name="summernote_hr" attrs="{'invisible': [('summernote_settings','=',False)]}" class="oe_inline"/>
-                    </div>
-
-                    <label   for="summernote_height" attrs="{'invisible': [('summernote_settings','=',False)]}"/>
-                    <div    name="summernote_height" attrs="{'invisible': [('summernote_settings','=',False)]}">
-                        <field name="summernote_height" attrs="{'invisible': [('summernote_settings','=',False)]}" class="oe_inline"/>
-                    </div>
-
-                    <label   for="summernote_codeview" attrs="{'invisible': [('summernote_settings','=',False)]}"/>
-                    <div    name="summernote_codeview" attrs="{'invisible': [('summernote_settings','=',False)]}">
-                        <field name="summernote_codeview" attrs="{'invisible': [('summernote_settings','=',False)]}" class="oe_inline"/>
-                    </div>
-
-
-
-
-
-
-
-                </group>
-            </xpath>
-        </field>
-    </record>
-
 
 
 <!-- explicit list view definition -->
     <record model="ir.ui.view" id="website_extend_web_editor.list">
-      <field name="name">summernote_config list</field>
-      <field name="model">website_extend_web_editor.summernote_config</field>
+      <field name="name">config list</field>
+      <field name="model">summernote.config</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="summernote_strikethrough"/>
-          <field name="summernote_superscript"/>
-          <field name="summernote_subscript"/>
-          <field name="summernote_hr"/>
-          <field name="summernote_height"/>
-          <field name="summernote_codeview"/>
+          <field name="strikethrough"/>
+          <field name="superscript"/>
+          <field name="subscript"/>
+          <field name="hr"/>
+          <field name="height"/>
+          <field name="codeview"/>
         </tree>
       </field>
     </record>
@@ -75,8 +21,8 @@
 
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="website_extend_web_editor.action_window">
-      <field name="name">summernote_config window</field>
-      <field name="res_model">website_extend_web_editor.summernote_config</field>
+      <field name="name">config window</field>
+      <field name="res_model">summernote.config</field>
       <field name="view_mode">tree,form</field>
     </record>
     
