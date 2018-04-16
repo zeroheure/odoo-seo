@@ -25,12 +25,13 @@
             var ui = $.summernote.ui;
             var options = context.options;
 
+            // create buttons
             self.generateBtn = function(tag, tooltip) {
-                var char = tag.slice(0,1).toUpperCase();
+                var char = tag.slice(0,1).toUpperCase(); // icon will be first letter of tag
                 return ui.button({
-                    contents: '<'+tag+'>'+char+'</'+tag+'>',
+                    contents: '<'+tag+'>'+char+'</'+tag+'>', // use tag for render tag icon with bootstrap style
                     tooltip: tooltip + ' <' + tag + '>',
-                    className: 'note-add-text-tags-btn',
+                    className: 'note-add-text-tags-btn', // css
                     click: function (e) {
                         self.wrapInTag(tag);
                     }
@@ -46,7 +47,7 @@
             var keyboard = self.generateBtn('kbd', 'User input');
             var code = self.generateBtn('code', 'Inline code');
 
-
+            // create buttons dropdown
             context.memo('button.add-text-tags', function () {
                 return ui.buttonGroup([
                     ui.button({
@@ -69,7 +70,8 @@
                     ])
                 ]).render();
             });
-
+            
+            // check if we are in only one html block
             self.areDifferentBlockElements = function(startEl, endEl) {
                 var startElDisplay = getComputedStyle(startEl, null).display;
                 var endElDisplay  = getComputedStyle(endEl, null).display;
@@ -83,6 +85,7 @@
                 }
             };
 
+            // can it be done ? check Node, block (above function), ancestor
             self.isSelectionParsable = function(startEl, endEl) {
 
                 if(startEl.isSameNode(endEl)) {
@@ -106,6 +109,7 @@
                     return false;
             };
 
+            // add tags around selection
             self.wrapInTag = function (tag) {
                 // from: https://github.com/summernote/summernote/pull/1919#issuecomment-304545919
                 // https://github.com/summernote/summernote/pull/1919#issuecomment-304707418
