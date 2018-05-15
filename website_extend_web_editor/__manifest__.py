@@ -3,7 +3,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     "name": "Extend web editor",
-    "summary": "Extend web editor.",
+    "summary": "Extend Summernote web editor with its default options.",
     "version": "10.0.0.1.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
