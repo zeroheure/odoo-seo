@@ -47,14 +47,14 @@
                 var variable = generateBtn('var', 'Variable');
                 var keyboard = generateBtn('kbd', 'User input');
                 var code = generateBtn('code', 'Inline code');
-                var strong = generateBtn('strong', 'Very important (SEO)');
+//                 var strong = generateBtn('strong', 'Very important (SEO)');
 
                 var dropdown = '<div class="dropdown-menu">';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
                 dropdown    += del + ins + small + mark + '</div>';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
                 dropdown    += variable + keyboard + code + '</div>';
-                dropdown    += strong + '</div>';
+//                 dropdown    += strong + '</div>';
 
 //                 return tmpl.dropdown(dropdown, '', 'div');
                 return tmpl.button('+', {
@@ -66,19 +66,6 @@
             },
             // fin add_text_tags
             
-            attDropdown: function (lang, options) {
-                var list = '<li><a data-event="attDropdown" href="#" data-value="summernote">summernote</a></li>';
-                list    += '<li><a data-event="attDropdown" href="#" data-value="codemirror">CodeMirror</a></li>';
-                var dropdown = '<ul class="dropdown-menu">' + list + '</ul>';
-
-                return tmpl.iconButton(options.iconPrefix + 'header', {
-                    title: 'Select text tags',
-                    hide: true,
-                    dropdown : dropdown
-                });
-            },
-
-
         },
             
 
@@ -163,14 +150,6 @@
                 self.wrapInTag(value);
             },
             
-            attDropdown: function (event, editor, layoutInfo, value) {
-                // Get current editable node
-                var $editable = layoutInfo.editable();
-
-                // Call insertText with 'bla bla'
-                editor.insertText($editable, 'bla bla ' + value + ' !!!!');
-            },
-
         }
 
     });
