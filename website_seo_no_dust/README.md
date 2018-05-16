@@ -13,7 +13,7 @@ In addition one should also disable sorting in the shop because it use URLs, whi
 - in website frontend, go to Customize menu
 - disable "Show Sort by"
 
-Instead of disable the sort, experienced webmasters may prefer to set URL parameters in search engines console. Beware that you should do that for every search engine (whereever possible).
+Instead of disabling the sort, experienced webmasters may prefer to set URL parameters in search engines console. Beware that you should do that for every search engine (whereever possible).
 
 ## Contributors
 
