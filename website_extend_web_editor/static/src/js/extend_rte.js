@@ -1,7 +1,9 @@
 odoo.define('website_extend_web_editor.extend_rte', function (require) {
     'use strict';
+    //var ajax = require("web.ajax");
+    //var core = require("web.core");
     var rte = require('web_editor.rte');
-
+    
     rte.Class.include({
 
         config: function ($editable) {
