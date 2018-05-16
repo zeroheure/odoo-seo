@@ -23,8 +23,9 @@ odoo.define('website_extend_web_editor.extend_rte', function (require) {
     
     /* Backend
     * FieldTextHtml Widget 
-    * see module 
-    * web_editor/static/src/js/backend.js 
+    * see module web_editor/static/src/js/backend.js 
+    * see PR
+    * https://github.com/odoo/odoo/pull/9895/commits/512ae81920727a104355553204482c3feebda6ea
     */
 });
 

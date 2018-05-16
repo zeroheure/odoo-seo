@@ -3,8 +3,8 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     "name": "Extend web editor",
-    "summary": "Extend web editor.",
-    "version": "10.0.1.0.0",
+    "summary": "Extend web editor with defaults Summernote options.",
+    "version": "10.0.0.1.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
     "author": "Xavier Brochard, zeroheure.info",
@@ -17,5 +17,6 @@
     ],
     "data": [
         "views/assets.xml",
+        "views/views.xml",
     ],
 }

@@ -1,0 +1,27 @@
+language: node_js
+node_js: 0.1
+before_script:
+- node --version
+- npm --version
+- npm install -g grunt-cli
+script:
+- grunt test --verbose
+- grunt saucelabs-test
+before_deploy:
+- npm install
+- grunt build
+- grunt dist
+deploy:
+  provider: npm
+  email: susukang98@gmail.com
+  api_key:
+    secure: TYJfuTLZKbYvTskuMlmuKnQb5F35GFPN2AqSf0RtZYWGLozIaIkKcpTVbjzo859FWuxPjci53FGiJih3+0iVfIC39CDTrFZutubn8qduOfRAVTL1WzeQvdww8miJNwUY59HmoOa78OtbNCVg/N7zFSZzRXAcgje8IADQFIISwk8=
+  on:
+    tags: true
+    branch: develop
+env:
+  global:
+  - secure: JwRh/BsZPWG4VCt5CmLj8PzZp/qkTEciAQK8RlcA9xMvbh7KdrU8t8/nCo3qA4oTbgSPQQ1lh+nxQItgBS5lWOM2kov4JSCnHR4mxDyjycfPB7E+Xuzlp89PtGpL6fk2VfVNceSvH2vmKCibbo2bKYRCJ5khMTKljh9FmTyFxQ0=
+  - secure: ML6bw+59g8pHDGRRwUj4Sf4rrXIEopqHv3l8l9//GUdoLMLTvTCIoLVlIKam51/6REYrvvbx/62Xi5+TZPn82FAASlS9lFK21cJYWnW+o+Rzemj2PHhKx8RFfFFur9FSpH6y0/Zx88dNF0OS83KlmNXuWy3tKYnABwyoBnx/JP4=
+addons:
+  sauce_connect: true
