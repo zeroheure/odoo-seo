@@ -25,9 +25,9 @@
     */
     $.summernote.addPlugin({
 
-        name: 'add-text-tags',
+        name: 'add_text_tags',
         buttons: {
-            add_text_tags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
+            addTextTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
 
                 generateBtn = function(tag, tooltip) {
                     var char = tag.slice(0,1).toUpperCase();
@@ -47,17 +47,21 @@
                 var variable = generateBtn('var', 'Variable');
                 var keyboard = generateBtn('kbd', 'User input');
                 var code = generateBtn('code', 'Inline code');
-                var strong = generateBtn('strong', 'Very important');
+                var strong = generateBtn('strong', 'Very important (SEO)');
 
                 var dropdown = [
-                    '<div class="note-align btn-group">',
-                    del + ins + small + mark + variable + keyboard + code + strong,
+                    '<div class="dropdown-menu"><div class="note-btn-group btn-group note-add-text-tags-others">',
+                    del + ins + small + mark,
+                    '</div><div class="note-btn-group btn-group note-add-text-tags-code">',
+                    variable + keyboard + code,
+                    '</div>',
+                    strong,
                     '</div>'
                 ];
-                return tmpl.button('K', {
+                return tmpl.button('+', {
                     title: 'more',
                     hide: true,
-//                     dropdown: tmpl.dropdown(dropdown, '', 'div')
+//                     dropdown: return tmpl.dropdown(dropdown, '', 'div');
                     dropdown: dropdown
                 });
 
