@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    
+    <template id="add_text_tags" name="Add Text Tags" inherit_id="web_editor.summernote">
+        <xpath expr="link[last()]" position="after">
+            <link href="/website_editor_plugin_text_tags/static/lib/summernote_add_text_tags.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <template id="plugin_add_text_tags" name="Web Editor Add Text Tags Plugin" inherit_id="web_editor.assets_editor">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/website_editor_plugin_text_tags/static/src/js/add_text_tags_rte.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
