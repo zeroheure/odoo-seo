@@ -25,7 +25,7 @@
     */
     $.summernote.addPlugin({
 
-        name: 'add_text_tags',
+        name: 'add-text-tags',
         buttons: {
             addTextTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
 
