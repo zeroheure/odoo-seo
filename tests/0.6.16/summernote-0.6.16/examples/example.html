@@ -16,15 +16,15 @@
   <script type="text/javascript" src="../dist/summernote.js"></script>
   <script type="text/javascript" src="../lang/summernote-ko-KR.js"></script>
 
-  <script type="text/javascript" src="../plugin/summernote-ext-att.js"></script>
-
+  <script type="text/javascript" src="../plugin/summernote-ext-add-text-tags.js"></script>
+  <link href="../plugin/summernote-add-text-tags.css" rel="stylesheet">
   <script type="text/javascript">
     $(document).ready(function() {
       $('.summernote').summernote({
         height: 200,
         tabsize: 2,
         toolbar: [
-  		    ['style', ['bold', 'italic', 'underline', 'clear']],
+  		    ['style', ['bold', 'italic', 'underline', 'addTextTags', 'clear']],
   		    ['color', ['color']],
   		    ['para', ['ul', 'ol', 'paragraph']],
   		    ['height', ['height']],
