@@ -1,1 +1,0 @@
-/home/Partage/modules Odoo/Xavier/tests/0.6.16/summernote-0.6.16/plugin/summernote-ext-att.js
