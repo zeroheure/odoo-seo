@@ -8,10 +8,12 @@ Duplicate URL Same Text.
 
 This module removes queries in products URLs, keeping only categories if needed.
 
-In addition one should also remove sorting in the shop because it use URLs, which creates a lot of duplicate content :
+In addition one should also disable sorting in the shop because it use URLs, which creates a lot of duplicate content :
 
 - in website frontend, go to Customize menu
 - disable "Show Sort by"
+
+Instead of disable the sort, experienced webmasters may prefer to set URL parameters in search engines console. Beware that you should do that for every search engine (whereever possible).
 
 ## Contributors
 
