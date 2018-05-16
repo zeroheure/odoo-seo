@@ -2,8 +2,8 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "Text tags",
-    "summary": "Extend web editor with text tags",
+    "name": "Add Text tags",
+    "summary": "Extend Summernotes web editor with text tags module",
     "version": "10.0.1.0.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
