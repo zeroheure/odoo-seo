@@ -35,8 +35,8 @@
                         event: 'add_tt',
                         value: tag,
                         title: tooltip + ' <' + tag + '>',
-                        className: 'note-add-text-tags-btn',
-                        hide: true
+//                         hide: true,
+                        className: 'note-add-text-tags-btn'
                     });
                 };
 
@@ -49,19 +49,17 @@
                 var code = generateBtn('code', 'Inline code');
                 var strong = generateBtn('strong', 'Very important (SEO)');
 
-                var dropdown = [
-                    '<div class="dropdown-menu"><div class="note-btn-group btn-group note-add-text-tags-others">',
-                    del + ins + small + mark,
-                    '</div><div class="note-btn-group btn-group note-add-text-tags-code">',
-                    variable + keyboard + code,
-                    '</div>',
-                    strong,
-                    '</div>'
-                ];
+                var dropdown = '<div class="dropdown-menu">';
+                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
+                dropdown    += del + ins + small + mark + '</div>';
+                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
+                dropdown    += variable + keyboard + code + '</div>';
+                dropdown    += strong + '</div>';
+
+//                 return tmpl.dropdown(dropdown, '', 'div');
                 return tmpl.button('+', {
                     title: 'more',
                     hide: true,
-//                     dropdown: return tmpl.dropdown(dropdown, '', 'div');
                     dropdown: dropdown
                 });
 
