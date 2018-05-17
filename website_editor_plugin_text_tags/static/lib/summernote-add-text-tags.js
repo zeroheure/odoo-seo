@@ -67,8 +67,8 @@
             // fin add_text_tags
             
         },
-            
 
+        // unfortunatly, JS execCommand works only with a few pre-defined tags
         events: {
             add_tt: function (event, editor, layoutInfo, value) {
                 // insertion
