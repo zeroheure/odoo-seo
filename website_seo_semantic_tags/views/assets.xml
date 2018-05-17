@@ -4,7 +4,7 @@
     
     <template id="semantic_tags" name="Semantic Tags" inherit_id="web_editor.summernote">
         <xpath expr="link[last()]" position="after">
-            <link href="/website_editor_plugin_seo/static/lib/summernote_semantic_tags.less" rel="stylesheet" type="text/less"/>
+            <link href="/website_editor_plugin_seo/static/lib/summernote-semantic-tags.less" rel="stylesheet" type="text/less"/>
         </xpath>
     </template>
 

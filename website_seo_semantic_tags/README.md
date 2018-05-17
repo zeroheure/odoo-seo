@@ -1,6 +1,9 @@
-# Add Text Tags Plugin Editor
+# SEO Semantic Tags Plugin
 
-This is a port of the Summernote [Add Text Tags](https://github.com/tylerecouture/summernote-add-text-tags) plugin for the editor used in website. Useful to write technical datas on the website.
+Derived from the [Add Text Tags](https://github.com/tylerecouture/summernote-add-text-tags) Summenrnote plugin
+
+bla bla
+for the editor used in website. Useful to write technical datas on the website.
 
 It adds a few elements in the font part of the toolbar :
 
