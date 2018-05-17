@@ -4,13 +4,13 @@
     
     <template id="semantic_tags" name="Semantic Tags" inherit_id="web_editor.summernote">
         <xpath expr="link[last()]" position="after">
-            <link href="/website_editor_plugin_seo/static/lib/summernote-semantic-tags.less" rel="stylesheet" type="text/less"/>
+            <link href="/website_seo_semantic_tags/static/lib/summernote-semantic-tags.less" rel="stylesheet" type="text/less"/>
         </xpath>
     </template>
 
     <template id="plugin_semantic_tags" name="Web Editor Semantic Tags Plugin" inherit_id="web_editor.assets_editor">
         <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/website_editor_plugin_seo/static/src/js/semantic_tags_rte.js"></script>
+            <script type="text/javascript" src="/website_seo_semantic_tags/static/src/js/semantic_tags_rte.js"></script>
         </xpath>
     </template>
 
