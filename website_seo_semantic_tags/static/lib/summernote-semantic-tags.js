@@ -1,5 +1,5 @@
 /**
-*    Copyright 2018 zeroheure.info - Xavier Brochard (backport to summernote 0.6.16)
+*    Copyright 2018 zeroheure.info - Xavier Brochard
 *    Copyright 2017 tylerecouture https://github.com/tylerecouture/summernote-add-text-tags
 *    * MIT License
 **/
@@ -35,7 +35,7 @@
     */
     $.summernote.addPlugin({
 
-        name: 'semanticTags',
+        name: 'semantic-tags',
         buttons: {
             
             strong: function (lang, options) { return generateBtn('strong',     'Important'); },
