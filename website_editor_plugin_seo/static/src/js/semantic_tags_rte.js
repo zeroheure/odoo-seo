@@ -3,7 +3,7 @@ odoo.define('website_editor_plugin_seo.semantic_tags_rte', function (require) {
     var ajax = require("web.ajax");
     var core = require("web.core");
     var rte = require('web_editor.rte');
-    ajax.loadJS('/website_editor_plugin_seo/static/lib/summernote-add-text-tags.js');
+    ajax.loadJS('/website_editor_plugin_seo/static/lib/summernote-semantic-tags.js');
 
     rte.Class.include({
 
