@@ -10,7 +10,7 @@ odoo.define('website_editor_plugin_seo.semantic_tags_rte', function (require) {
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
             config.airPopover.splice(1, 1, 
-                ['font', ['bold', 'italic', 'underline', 'semanticSEO', 'clear']]);
+                ['font', ['strong, em', 'mark']]);
             return config;
         }
     });

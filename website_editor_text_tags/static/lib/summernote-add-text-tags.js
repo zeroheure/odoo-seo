@@ -25,14 +25,14 @@
     */
     $.summernote.addPlugin({
 
-        name: 'semanticTags',
+        name: 'add-text-tags',
         buttons: {
-            semanticTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
+            addTextTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
 
                 generateBtn = function(tag, tooltip) {
                     var char = tag.slice(0,1).toUpperCase();
                     return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
-                        event: 'semantic_tags',
+                        event: 'add_tt',
                         value: tag,
                         title: tooltip + ' <' + tag + '>',
 //                         hide: true,
@@ -40,32 +40,23 @@
                     });
                 };
 
-                
-                var strong = generateBtn('strong', 'Important');
-                var em = generateBtn('em', 'Accentuate');
-                var mark = generateBtn('mark', 'Highlight');
                 var del = generateBtn('del', 'Deleted text');
                 var ins = generateBtn('ins', 'Inserted text');
-                var abbr = generateBtn('abbr', 'Acronym or abreviation');
-                var cite = generateBtn('cite', 'Author or title inside a quoted text');
-                var q = generateBtn('q', 'Short quote');
-                var figure = generateBtn('figure', 'A visual media');
-                var figcaption = generateBtn('figcaption', 'Media title');
-                
-                
+                var small = generateBtn('small', 'Fine print');
+                var mark = generateBtn('mark', 'Highlighted text');
+                var variable = generateBtn('var', 'Variable');
+                var keyboard = generateBtn('kbd', 'User input');
+                var code = generateBtn('code', 'Inline code');
 
                 var dropdown = '<div class="dropdown-menu">';
-                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
-                dropdown    += strong + em + mark + '</div>';
-                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
-                dropdown    += del + ins + '</div>';
-                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
-                dropdown    += abbr + cite + q + '</div>';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
-                dropdown    += figure + figcaption + '</div>';
+                dropdown    += del + ins + small + mark + '</div>';
+                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
+                dropdown    += variable + keyboard + code + '</div>';
+
 
 //                 return tmpl.dropdown(dropdown, '', 'div');
-                return tmpl.button('SEO', {
+                return tmpl.button('+', {
                     title: 'more',
                     hide: true,
                     dropdown: dropdown
@@ -78,7 +69,7 @@
 
         // unfortunatly, JS execCommand works only with a few pre-defined tags
         events: {
-            semantic_tags: function (event, editor, layoutInfo, value) {
+            add_tt: function (event, editor, layoutInfo, value) {
                 // insertion
                 var self = this;
                 self.areDifferentBlockElements = function(startEl, endEl) {

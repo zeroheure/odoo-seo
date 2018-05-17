@@ -19,58 +19,86 @@
 }(function ($) {
     // template
     var tmpl = $.summernote.renderer.getTemplate();
-
+    // put it here to generate each tag icon individually
+    generateBtn = function(tag, tooltip) {
+        var char = tag.slice(0,1).toUpperCase();
+        return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
+            event: 'semantic_tags',
+            value: tag,
+            title: tooltip + ' <' + tag + '>',
+            // hide: true,
+//             className: 'note-add-text-tags-btn'
+        });
+    };
     /**
-    * @class plugin.add-text-tags
+    * @class plugin.semantic-tags
     */
     $.summernote.addPlugin({
 
-        name: 'add-text-tags',
+        name: 'semanticTags',
         buttons: {
-            addTextTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
+            semanticTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
 
                 generateBtn = function(tag, tooltip) {
                     var char = tag.slice(0,1).toUpperCase();
                     return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
-                        event: 'add_tt',
+                        event: 'semantic_tags',
                         value: tag,
                         title: tooltip + ' <' + tag + '>',
-//                         hide: true,
+                        // hide: true,
                         className: 'note-add-text-tags-btn'
                     });
                 };
 
+                var strong = generateBtn('strong', 'Important');
+                var em = generateBtn('em', 'Accentuate');
+                var mark = generateBtn('mark', 'Highlight');
                 var del = generateBtn('del', 'Deleted text');
                 var ins = generateBtn('ins', 'Inserted text');
-                var small = generateBtn('small', 'Fine print');
-                var mark = generateBtn('mark', 'Highlighted text');
-                var variable = generateBtn('var', 'Variable');
-                var keyboard = generateBtn('kbd', 'User input');
-                var code = generateBtn('code', 'Inline code');
-//                 var strong = generateBtn('strong', 'Very important (SEO)');
+                var abbr = generateBtn('abbr', 'Acronym or abbreviation');
+                var q = generateBtn('q', 'Short quotation');
+                var cite = generateBtn('cite', 'Title of a work or inside a quoted text');
+                var figure = generateBtn('figure', 'A visual media');
+                var figcaption = generateBtn('figcaption', 'Media title');
 
                 var dropdown = '<div class="dropdown-menu">';
-                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
-                dropdown    += del + ins + small + mark + '</div>';
-                dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
-                dropdown    += variable + keyboard + code + '</div>';
-//                 dropdown    += strong + '</div>';
+                dropdown    += '<div class="btn-group">';
+                dropdown    += strong + em + mark + abbr + '</div>';
+                dropdown    += '<div class="btn-group">';
+                dropdown    += cite + q + '</div>';
+                dropdown    += '<div class="btn-group">';
+                dropdown    += del + ins + '</div>';
+                dropdown    += '<div class="btn-group">';
+                dropdown    += figure + figcaption + '</div>';
+                dropdown    += '</div>';
 
-//                 return tmpl.dropdown(dropdown, '', 'div');
-                return tmpl.button('+', {
-                    title: 'more',
+                // tplDropdown is not exported through renderer.getTemplate()
+                // return tmpl.dropdown(dropdown, '', 'div');
+                return tmpl.button('SEO', {
+                    title: 'Semantic tags',
                     hide: true,
                     dropdown: dropdown
                 });
 
             },
-            // fin add_text_tags
             
+            strong: function (lang, options) { return generateBtn('strong',     'Important'); },
+            em:     function (lang, options) { return generateBtn('em',        'Accentuate'); },
+            mark:   function (lang, options) { return generateBtn('mark',       'Highlight'); },
+            q:      function (lang, options) { return generateBtn('q',    'Short quotation'); },
+            cite:   function (lang, options) { return generateBtn('cite', 'Title of a work'); },
+            abbr:   function (lang, options) { return generateBtn('abbr', 'Acronym, abbrev'); },
+            del:    function (lang, options) { return generateBtn('del',     'Deleted text'); },
+            ins:    function (lang, options) { return generateBtn('ins',    'Inserted text'); },
+            figure: function (lang, options) { return generateBtn('figure', 'A visual media');},
+            figcaption:  function (lang, options) { return generateBtn('figcaption', 'Media title');  },
+            
+
         },
 
         // unfortunatly, JS execCommand works only with a few pre-defined tags
         events: {
-            add_tt: function (event, editor, layoutInfo, value) {
+            semantic_tags: function (event, editor, layoutInfo, value) {
                 // insertion
                 var self = this;
                 self.areDifferentBlockElements = function(startEl, endEl) {
