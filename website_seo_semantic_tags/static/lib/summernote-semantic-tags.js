@@ -37,50 +37,6 @@
 
         name: 'semanticTags',
         buttons: {
-            semanticTags: function (lang, options) { // no hyphens in Object's name (not add-text-tags)
-
-                generateBtn = function(tag, tooltip) {
-                    var char = tag.slice(0,1).toUpperCase();
-                    return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
-                        event: 'semantic_tags',
-                        value: tag,
-                        title: tooltip + ' <' + tag + '>',
-                        // hide: true,
-                        className: 'note-add-text-tags-btn'
-                    });
-                };
-
-                var strong = generateBtn('strong', 'Important');
-                var em = generateBtn('em', 'Accentuate');
-                var mark = generateBtn('mark', 'Highlight');
-                var del = generateBtn('del', 'Deleted text');
-                var ins = generateBtn('ins', 'Inserted text');
-                var abbr = generateBtn('abbr', 'Acronym or abbreviation');
-                var q = generateBtn('q', 'Short quotation');
-                var cite = generateBtn('cite', 'Title of a work or inside a quoted text');
-                var figure = generateBtn('figure', 'A visual media');
-                var figcaption = generateBtn('figcaption', 'Media title');
-
-                var dropdown = '<div class="dropdown-menu">';
-                dropdown    += '<div class="btn-group">';
-                dropdown    += strong + em + mark + abbr + '</div>';
-                dropdown    += '<div class="btn-group">';
-                dropdown    += cite + q + '</div>';
-                dropdown    += '<div class="btn-group">';
-                dropdown    += del + ins + '</div>';
-                dropdown    += '<div class="btn-group">';
-                dropdown    += figure + figcaption + '</div>';
-                dropdown    += '</div>';
-
-                // tplDropdown is not exported through renderer.getTemplate()
-                // return tmpl.dropdown(dropdown, '', 'div');
-                return tmpl.button('SEO', {
-                    title: 'Semantic tags',
-                    hide: true,
-                    dropdown: dropdown
-                });
-
-            },
             
             strong: function (lang, options) { return generateBtn('strong',     'Important'); },
             em:     function (lang, options) { return generateBtn('em',        'Accentuate'); },
