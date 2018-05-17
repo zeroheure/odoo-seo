@@ -19,6 +19,7 @@
 }(function ($) {
     // template
     var tmpl = $.summernote.renderer.getTemplate();
+    // put it here to generate each tag icon individually
     generateBtn = function(tag, tooltip) {
         var char = tag.slice(0,1).toUpperCase();
         return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
@@ -30,7 +31,7 @@
         });
     };
     /**
-    * @class plugin.add-text-tags
+    * @class plugin.semantic-tags
     */
     $.summernote.addPlugin({
 
@@ -44,7 +45,7 @@
                         event: 'semantic_tags',
                         value: tag,
                         title: tooltip + ' <' + tag + '>',
-//                         hide: true,
+                        // hide: true,
                         className: 'note-add-text-tags-btn'
                     });
                 };
@@ -72,7 +73,7 @@
                 dropdown    += '</div>';
 
                 // tplDropdown is not exported through renderer.getTemplate()
-//                 return tmpl.dropdown(dropdown, '', 'div');
+                // return tmpl.dropdown(dropdown, '', 'div');
                 return tmpl.button('SEO', {
                     title: 'Semantic tags',
                     hide: true,
