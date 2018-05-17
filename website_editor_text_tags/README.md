@@ -1,4 +1,4 @@
-# Add Text Tags Plugin Editor
+# Add Text Tags Plugin For Editor
 
 This is a port of the Summernote [Add Text Tags](https://github.com/tylerecouture/summernote-add-text-tags) plugin for the editor used in website. Useful to write technical datas on the website.
 

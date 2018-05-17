@@ -1,9 +1,9 @@
-odoo.define('website_editor_plugin_text_tags.add_text_tags_rte', function (require) {
+odoo.define('website_editor_text_tags.add_text_tags_rte', function (require) {
     'use strict';
     var ajax = require("web.ajax");
     var core = require("web.core");
     var rte = require('web_editor.rte');
-    ajax.loadJS('/website_editor_plugin_text_tags/static/lib/summernote-add-text-tags.js');
+    ajax.loadJS('/website_editor_text_tags/static/lib/summernote-add-text-tags.js');
 
     rte.Class.include({
 

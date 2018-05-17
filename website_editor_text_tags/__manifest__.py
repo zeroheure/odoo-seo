@@ -2,8 +2,8 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "Add Text Tags Plugin Editor",
-    "summary": "Extend Summernote web editor with Add Text Tags plugin.",
+    "name": "Add Text Tags Plugin For Editor",
+    "summary": "Extend Summernote website editor with programmers Text Tags.",
     "version": "10.0.1.0.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
