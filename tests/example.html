@@ -15,8 +15,6 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.16/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.16/summernote.js"></script>
 
-    <script type="text/javascript" src="./summernote-plugins/summernote-fontawesome/summernote-fontawesome.js"></script>
-    <script type="text/javascript" src="./summernote-plugins/summernote-ext-specialchars/summernote-ext-specialchars.js"></script>
     <script type="text/javascript" src="summernote-semantic-tags.js"></script>
     <link  rel="stylesheet" href="summernote-semantic-tags.css">
 
@@ -37,13 +35,16 @@
         height: 200,
         tabsize: 2,
         toolbar: [
-            ['style', ['style', 'semanticTags', 'fontsize', 'clear']],
+            ['style', ['style', 'strong', 'em', 'mark', 'fontsize']],
+            ['sem', ['q', 'cite', 'abbr']],
+            ['change', ['del', 'ins']],
+            
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
             ['height', ['height']],
             ['table', ['table']],
             ['group', [ 'specialChar', 'fontIcon' ]],
-            ['help', ['codeview', 'help']]
+            ['help', ['clear', 'codeview', 'help']]
         ]
       });
     });
