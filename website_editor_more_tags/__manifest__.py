@@ -2,7 +2,7 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "Extend web editor",
+    "name": "More html tags",
     "summary": "Extend web editor with defaults Summernote options.",
     "version": "10.0.0.1.0",
     "category": "Website",
