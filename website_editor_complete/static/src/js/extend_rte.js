@@ -4,7 +4,8 @@ odoo.define('website_editor_complete.extend_rte', function (require) {
     //var core = require("web.core");
     var rte = require('web_editor.rte');
     
-    
+    define(['summernote/module/Editor'],function (editor) {});
+
 
     $.summernote.addPlugin({
 
@@ -16,7 +17,7 @@ odoo.define('website_editor_complete.extend_rte', function (require) {
                 var tplDropdown = $.summernote.renderer.getTemplate().dropdown;
                 var dropdown = [
                     '<div class="note-align btn-group text-tags" style="min-width: 275px;">',
-                    strikethrough + superscript + subscript + hr + height
+                    strikethrough + superscript + subscript + hr + height,
                     '</div>'
                 ];
                 return tmpl.button('+', {
@@ -33,7 +34,7 @@ odoo.define('website_editor_complete.extend_rte', function (require) {
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
             config.airPopover.push( 
-                ['more', ['more']]);
+                ['more', ['hr', 'more', 'height']]);
             return config;
         }
     });
