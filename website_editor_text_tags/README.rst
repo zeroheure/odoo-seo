@@ -18,6 +18,7 @@ It adds a few elements in the font part of the toolbar :
    -  ``<code>`` for inline code snippets
    -  ``<kbd>`` for indicating user input.
    -  ``<var>`` for indicating variables.
+   -  ``<samp>`` for sample output
 
 Limitations
 -----------
@@ -25,12 +26,13 @@ Limitations
 -  This extension doesn’t use summernote’s built in parser, but it can
    handle some basic cross-node insertions.
 -  The elements won’t toggle on and off, however they will clear with
-   Summernote’s ``Remove Font Style`` button
+   Odoo ``Remove Font Style`` button (rubber icon)
 
 Contributors
 ------------
 
 -  Xavier Brochard zeroheure@zeroheure.info
+-  tylerecouture, author of the Summernote plugin
 
 Maintainer
 ----------

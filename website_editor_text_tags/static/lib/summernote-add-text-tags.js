@@ -47,12 +47,13 @@
                 var variable = generateBtn('var', 'Variable');
                 var keyboard = generateBtn('kbd', 'User input');
                 var code = generateBtn('code', 'Inline code');
-
+                var samp = generateBtn('samp', 'Sample output');
+                
                 var dropdown = '<div class="dropdown-menu">';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
                 dropdown    += del + ins + small + mark + '</div>';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
-                dropdown    += variable + keyboard + code + '</div>';
+                dropdown    += variable + keyboard + code + samp + '</div>';
 
                 // tplDropdown is not exported through renderer.getTemplate()
 //                 var tplDropdown = renderer.getTemplate().dropdown;
