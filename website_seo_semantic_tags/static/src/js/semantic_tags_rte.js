@@ -10,7 +10,7 @@ odoo.define('website_seo_semantic_tags.semantic_tags_rte', function (require) {
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
             config.airPopover.splice(1, 1, 
-                ['font', ['strong, em', 'mark']],
+                ['font', ['strong', 'em', 'mark']],
                 ['sem', ['q', 'cite', 'abbr']],
                 ['change', ['del', 'ins']],
             );
