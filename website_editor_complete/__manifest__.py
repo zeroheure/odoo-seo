@@ -2,8 +2,8 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "More html tags",
-    "summary": "Extend web editor with defaults Summernote options.",
+    "name": "Editor Complete",
+    "summary": "Enable all defaults options in website editor.",
     "version": "10.0.0.1.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
@@ -17,6 +17,5 @@
     ],
     "data": [
         "views/assets.xml",
-        "views/views.xml",
     ],
 }
