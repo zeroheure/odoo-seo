@@ -64,7 +64,6 @@
                 });
 
             },
-            // fin add_text_tags
             
         },
 
