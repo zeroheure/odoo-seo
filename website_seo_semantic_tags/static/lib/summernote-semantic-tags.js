@@ -27,29 +27,17 @@
 
         name: 'semantic-tags',
         buttons: {
-            // voir dans le plugin specialchars ou sont les fonctions et comment il les apelle
-            // put it here to generate each tag icon individually
-//             generateBtn = function(tag, tooltip) {
-//                 var char = tag.slice(0,1).toUpperCase();
-//                 return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
-//                     event: 'semantic_tags',
-//                     value: tag,
-//                     title: tooltip + ' <' + tag + '>',
-//                     // hide: true,
-//                     // className: 'note-add-text-tags-btn'
-//                 });
-//             };
 
-//             strong: function (lang, options) { return generateBtn('strong',     'Important');  },
-//             em:     function (lang, options) { return generateBtn('em',        'Accentuate');  },
-//             mark:   function (lang, options) { return generateBtn('mark',       'Highlight');  },
-//             q:      function (lang, options) { return generateBtn('q',    'Short quotation');  },
-//             cite:   function (lang, options) { return generateBtn('cite', 'Title of a work');  },
-//             abbr:   function (lang, options) { return generateBtn('abbr', 'Acronym, abbrev');  },
-//             del:    function (lang, options) { return generateBtn('del',     'Deleted text');  },
-//             ins:    function (lang, options) { return generateBtn('ins',    'Inserted text');  },
-//             figure: function (lang, options) { return generateBtn('figure', 'A visual media'); },
-//        figcaption:  function (lang, options) { return generateBtn('figcaption', 'Media title');},
+            strong: function (lang, options) { return generateBtn('strong',       'Important'); },
+                em: function (lang, options) { return generateBtn('em',          'Accentuate'); },
+              mark: function (lang, options) { return generateBtn('mark',         'Highlight'); },
+                 q: function (lang, options) { return generateBtn('q',      'Short quotation'); },
+              cite: function (lang, options) { return generateBtn('cite',   'Title of a work'); },
+              abbr: function (lang, options) { return generateBtn('abbr',   'Acronym, abbrev'); },
+               del: function (lang, options) { return generateBtn('del',       'Deleted text'); },
+               ins: function (lang, options) { return generateBtn('ins',      'Inserted text'); },
+            figure: function (lang, options) { return generateBtn('figure',  'A visual media'); },
+        figcaption: function (lang, options) { return generateBtn('figcaption', 'Media title'); },
 
         },
 
@@ -138,4 +126,17 @@
         }
 
     });
+
+    // put it here to generate each tag icon individually
+    self.generateBtn = function(tag, tooltip) {
+        var char = tag.slice(0,1).toUpperCase();
+        return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
+            event: 'semantic_tags',
+            value: tag,
+            title: tooltip + ' <' + tag + '>',
+            // hide: true,
+            // className: 'note-add-text-tags-btn'
+        });
+    };
+
 }));
