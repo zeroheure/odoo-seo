@@ -49,7 +49,7 @@
                 var code = generateBtn('code', 'Inline code');
                 var samp = generateBtn('samp', 'Sample output');
                 
-                var dropdown = '<div class="dropdown-menu">';
+                var dropdown = '<div class="dropdown-menu text-tags">';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-others">';
                 dropdown    += del + ins + small + mark + '</div>';
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
