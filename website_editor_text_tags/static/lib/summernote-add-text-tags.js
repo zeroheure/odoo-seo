@@ -55,10 +55,10 @@
                 dropdown    += '<div class="note-btn-group btn-group note-add-text-tags-code">';
                 dropdown    += variable + keyboard + code + samp + '</div>';
 
-                // tplDropdown is not exported through renderer.getTemplate()
-//                 var tplDropdown = renderer.getTemplate().dropdown;
-//                 return tmpl.dropdown(dropdown, '', 'div');
-                return tmpl.button('+', {
+                // tplDropdown is not exported through renderer.getTemplate(). Code could be :
+                // var tplDropdown = renderer.getTemplate().dropdown;
+                // return tmpl.dropdown(dropdown, '', 'div');
+                return tmpl.button('TT', {
                     title: 'more',
                     hide: true,
                     dropdown: dropdown

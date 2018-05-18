@@ -10,7 +10,7 @@ odoo.define('website_editor_text_tags.add_text_tags_rte', function (require) {
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
             config.airPopover.push(
-                ['texttags', ['addTextTags', 'clear']]);
+                ['texttags', ['addTextTags']]);
             return config;
         }
     });

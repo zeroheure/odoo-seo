@@ -2,9 +2,9 @@
 <odoo>
 
     
-    <template id="add_text_tags" name="Add Text Tags" inherit_id="web_editor.summernote">
+    <template id="add_text_tags" name="Add Text Tags" inherit_id="web_editor.assets_editor">
         <xpath expr="link[last()]" position="after">
-            <link href="/website_editor_text_tags/static/lib/summernote_add_text_tags.less" rel="stylesheet" type="text/less"/>
+            <link href="/website_editor_text_tags/static/lib/summernote-add-text-tags.less" rel="stylesheet" type="text/less"/>
         </xpath>
     </template>
 
