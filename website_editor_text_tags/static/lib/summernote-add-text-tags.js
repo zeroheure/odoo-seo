@@ -49,7 +49,7 @@
                 var code = generateBtn('code', 'Inline code');
                 var samp = generateBtn('samp', 'Sample output');
 
-                // tplDropdown is not exported through renderer.getTemplate(). Code could be :
+                // tplDropdown is not exported through renderer.getTemplate().
                 var tplDropdown = $.summernote.renderer.getTemplate().dropdown;
                 var dropdown = [
                     '<div class="note-align btn-group text-tags" style="min-width: 275px;">',

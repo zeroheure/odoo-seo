@@ -15,7 +15,7 @@
     }
 }(function ($) {
     var tmpl = $.summernote.renderer.getTemplate();
-    
+
     // put it here to generate each tag icon individually
     self.generateBtn = function(tag, tooltip) {
         var char = tag.slice(0,1).toUpperCase();
@@ -35,7 +35,7 @@
                 em: function (lang, options) { return generateBtn('em',          'Accentuate'); },
               mark: function (lang, options) { return generateBtn('mark',         'Highlight'); },
                  q: function (lang, options) { return generateBtn('q',      'Short quotation'); },
-              cite: function (lang, options) { return generateBtn('cite',   'Title of a work'); },
+//               cite: function (lang, options) { return generateBtn('cite',   'Title of a work'); },
               abbr: function (lang, options) { return generateBtn('abbr',   'Acronym, abbrev'); },
                dfn: function (lang, options) { return generateBtn('dfn',     'Term to define'); },
                del: function (lang, options) { return generateBtn('del',       'Deleted text'); },
@@ -43,13 +43,25 @@
             figure: function (lang, options) { return generateBtn('figure',  'A visual media'); },
         figcaption: function (lang, options) { return generateBtn('figcaption', 'Media title'); },
 
+            cite: function (lang, options) { 
+                var body =  '<div class="form-group row">' +
+                                '<label>Title</label>' +
+                                '<input class="note-image-url form-control col-md-12" type="text" />' +
+                            '</div>';
+
+                var footer = '<button href="#" class="btn btn-primary note-image-btn"> insert </button>';
+                // className, title, body, footer
+//                 return tmpl.button('<cite>C</cite>', {
+                    event: show tmpl.dialog('', 'Title of a work' , body, footer);
+//                     value: 'cite',
+//                     title: 'Title of a work',
+//                 });
+            },
         },
 
-        // unfortunatly, JS execCommand works only with a few pre-defined tags
         // code adapted from summernote-add-text-tags plugin
         events: {
             semantic_tags: function (event, editor, layoutInfo, value) {
-                // insertion
                 var self = this;
                 self.areDifferentBlockElements = function(startEl, endEl) {
                     var startElDisplay = getComputedStyle(startEl, null).display;
