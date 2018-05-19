@@ -13,21 +13,21 @@ Search engines can still found those links from Sitemap, which is automaticaly p
 
 ## Available addons
 
-
-            addons              |  version   |  summary
-------------------------------- | ---------- | ---------
-website_editor_plugin_text_tags | 10.0.1.0.0 |  Add text tags plugins in web editor (page rank)
-website_extend_web_editor       | 10.0.1.0.0 |  Extend web editor with useful tags (not yet)
-website_seo_breadcrumb          | 10.0.1.0.0 |  Add structured datas and H6 tags in breadcrumb (SERP & page rank)
-website_seo_breadcrumb_blog     | 10.0.1.0.0 |  Same, does it for blog
-website_seo_footer              | 10.0.1.0.0 |  Remove headings and obfuscate links in footer (page rank)
-website_seo_footer_blog         | 10.0.1.0.0 |  Obfuscate blog links (page rank)
-website_seo_footer_forum        | 10.0.1.0.0 |  Obfuscate forum links (page rank)
-website_seo_footer_more         | 10.0.1.0.0 |  Obfuscate additional links (page rank)
-website_seo_footer_payment      | 10.0.1.0.0 |  Remode heading (page rank)
-website_seo_meta_size           | 10.0.1.0.0 |  Increase size of meta field (Google update, nov. 2017) (SERP)
-website_seo_no_dust             | 10.0.1.0.0 |  Remove URLs parameters (dublicate content, page rank)
-website_seo_obfuscate_link      | 10.0.1.0.0 |  Provide CSS and add obfuscate tool in web-editor (not yet)
+        addons              |   version  |  summary
+--------------------------- | ---------- | ---------
+website_editor_default      | 10.0.1.0.0 | Extend web editor default tags (not yet ready)
+website_editor_text_tags    | 10.0.1.0.0 | Text tags editor plugin
+website_seo_breadcrumb      | 10.0.1.0.0 | Add structured datas and H6 tags in breadcrumb (SERP & page rank)
+website_seo_breadcrumb_blog | 10.0.1.0.0 | Same, does it for blog
+website_seo_footer          | 10.0.1.0.0 | Remove headings and obfuscate links in footer (page rank)
+website_seo_footer_blog     | 10.0.1.0.0 | Obfuscate blog links (page rank)
+website_seo_footer_forum    | 10.0.1.0.0 | Obfuscate forum links (page rank)
+website_seo_footer_more     | 10.0.1.0.0 | Obfuscate additional links (page rank)
+website_seo_footer_payment  | 10.0.1.0.0 | Remode heading (page rank)
+website_seo_meta_size       | 10.0.1.0.0 | Increase size of meta fields (Google update, nov. 2017) (SERP)
+website_seo_no_dust         | 10.0.1.0.0 | Remove URLs parameters (dublicate content)
+website_seo_obfuscate_link  | 10.0.1.0.0 | Provide CSS and add obfuscate tool in web-editor (not yet)
+website_seo_semantic_tags   | 10.0.1.0.0 | Replace bold, italic, etc. icons with semantic ones (page rank)
 
 ## TODO
 
