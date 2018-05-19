@@ -17,8 +17,9 @@ odoo.define('website_seo_semantic_tags.semantic_tags_rte', function (require) {
                 ['change', ['del', 'ins']],
             );
             config.airPopover.splice(8, 1, 
-                ['help', ['clear']],
+                ['help', ['undo', 'redo', 'clear']],
             );
+            
             return config;
         }
     });
