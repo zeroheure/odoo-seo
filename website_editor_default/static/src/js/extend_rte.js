@@ -1,4 +1,4 @@
-odoo.define('website_editor_complete.extend_rte', function (require) {
+odoo.define('website_editor_default.extend_rte', function (require) {
     'use strict';
     //var ajax = require("web.ajax");
     //var core = require("web.core");
