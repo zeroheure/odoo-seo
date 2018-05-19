@@ -13,7 +13,7 @@ odoo.define('website_seo_semantic_tags.semantic_tags_rte', function (require) {
                 ['style', ['style', 'strong', 'em', 'mark']]
             );
             config.airPopover.splice(1, 1, 
-                ['sem', ['q', 'cite', 'abbr']],
+                ['terms', ['q', 'cite', 'abbr' 'dfn']],
                 ['change', ['del', 'ins']],
             );
             config.airPopover.splice(8, 1, 
