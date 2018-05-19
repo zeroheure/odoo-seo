@@ -1,4 +1,4 @@
-odoo.define('website_editor_text_tags.add_text_tags_rte', function (require) {
+odoo.define('website_editor_text_tags.extend_rte', function (require) {
     'use strict';
     var ajax = require("web.ajax");
     var core = require("web.core");

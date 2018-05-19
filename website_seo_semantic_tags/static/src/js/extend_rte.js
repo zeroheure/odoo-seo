@@ -1,4 +1,4 @@
-odoo.define('website_seo_semantic_tags.semantic_tags_rte', function (require) {
+odoo.define('website_seo_semantic_tags.extend_rte', function (require) {
     'use strict';
     var ajax = require("web.ajax");
     var core = require("web.core");
