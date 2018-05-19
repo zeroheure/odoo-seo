@@ -3,7 +3,7 @@
 
     <template id="plugin_add_text_tags" name="Web Editor Add Text Tags Plugin" inherit_id="web_editor.assets_editor">
         <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/website_editor_text_tags/static/src/js/add_text_tags_rte.js"></script>
+            <script type="text/javascript" src="/website_editor_text_tags/static/src/js/extend_rte.js"></script>
         </xpath>
     </template>
 

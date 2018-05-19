@@ -1,26 +1,11 @@
 odoo.define('website_editor_default.extend_rte', function (require) {
     'use strict';
-    //var ajax = require("web.ajax");
-    //var core = require("web.core");
+    var ajax = require("web.ajax");
+    var core = require("web.core");
     var rte = require('web_editor.rte');
-
+    ajax.loadJS('/website_editor_default/static/lib/summernote-default-tags.js');
+    
     rte.Class.include({
-
-        
-        more: function (lang, options) {
-                var tplDropdown = $.summernote.renderer.getTemplate().dropdown;
-                var tplButton = $.summernote.renderer.getTemplate().button;
-                var dropdown = [
-                    '<div class="note-align btn-group text-tags" style="min-width: 275px;">',
-                    strikethrough + superscript + subscript + hr + height,
-                    '</div>'
-                ];
-                return tplButton('+', {
-                    title: 'More icons',
-                    hide: true,
-                    dropdown: tplDropdown(dropdown, 'text-tags', 'ul')
-                });
-            },
 
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
