@@ -134,8 +134,6 @@
             event: 'semantic_tags',
             value: tag,
             title: tooltip + ' <' + tag + '>',
-            // hide: true,
-            // className: 'note-add-text-tags-btn'
         });
     };
 
