@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="plugin_specialchars" name="Web Editor Special Characters Plugin" inherit_id="web_editor.assets_editor">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/website_editor_specialchars/static/src/js/specialchars_rte.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
