@@ -34,6 +34,7 @@
                  q: function (lang, options) { return generateBtn('q',      'Short quotation'); },
               cite: function (lang, options) { return generateBtn('cite',   'Title of a work'); },
               abbr: function (lang, options) { return generateBtn('abbr',   'Acronym, abbrev'); },
+               dfn: function (lang, options) { return generateBtn('dfn',     'Term to define'); },
                del: function (lang, options) { return generateBtn('del',       'Deleted text'); },
                ins: function (lang, options) { return generateBtn('ins',      'Inserted text'); },
             figure: function (lang, options) { return generateBtn('figure',  'A visual media'); },
