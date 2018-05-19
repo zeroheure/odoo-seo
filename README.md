@@ -14,17 +14,21 @@ Search engines can still found those links from Sitemap, which is automaticaly p
 ## Available addons
 
 
-addon | version | summary
---- | --- | ---
-website_extend_web_editor  | 10.0.1.0.0 |     Extend web editor with useful tags (not yet)
-website_seo_breadcrumb     | 10.0.1.0.0 |     Add structured datas and H6 tags in breadcrumb
-website_seo_footer         | 10.0.1.0.0 |     Remove headings and obfuscate links in footer, 
-website_seo_footer_blog    | 10.0.1.0.0 |     Obfuscate blog links
-website_seo_footer_forum   | 10.0.1.0.0 |     Obfuscate forum links
-website_seo_footer_more    | 10.0.1.0.0 |     Obfuscate additional links
-website_seo_footer_payment | 10.0.1.0.0 |     Remode heading
-website_seo_obfuscate_link | 10.0.1.0.0 |     Provide CSS and add obfuscate tool in web-editor (not yet)
-website_seo_no_dust        | 10.0.1.0.0 |     Remove URLs parameters (dublicate content)
+  addon                     |   version  |  summary
+--------------------------- | ---------- | ---------
+website_editor_default      | 10.0.1.0.0 | Extend web editor default tags (not yet ready)
+website_editor_text_tags    | 10.0.1.0.0 | Text tags editor plugin
+website_seo_breadcrumb      | 10.0.1.0.0 | Add structured datas and H6 tags in breadcrumb
+website_seo_breadcrumb_blog | 10.0.1.0.0 | Same for blog
+website_seo_footer          | 10.0.1.0.0 | Remove headings and obfuscate links in footer, 
+website_seo_footer_blog     | 10.0.1.0.0 | Obfuscate blog links
+website_seo_footer_forum    | 10.0.1.0.0 | Obfuscate forum links
+website_seo_footer_more     | 10.0.1.0.0 | Obfuscate additional links
+website_seo_footer_payment  | 10.0.1.0.0 | Remode heading
+website_seo_meta_size       | 10.0.1.0.0 | Increase size of meta fields
+website_seo_no_dust         | 10.0.1.0.0 | Remove URLs parameters (dublicate content)
+website_seo_obfuscate_link  | 10.0.1.0.0 | Provide CSS and add obfuscate tool in web-editor (not yet)
+website_seo_semantic_tags   | 10.0.1.0.0 | Replace bold, italic, etc. icons with semantic ones
 
 ## TODO
 
