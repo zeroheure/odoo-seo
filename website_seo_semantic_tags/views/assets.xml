@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="plugin_semantic_tags" name="Web Editor Semantic Tags Plugin" inherit_id="web_editor.assets_editor">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/website_seo_semantic_tags/static/src/js/semantic_tags_rte.js"></script>
+        </xpath>
+    </template>
+
+</odoo>

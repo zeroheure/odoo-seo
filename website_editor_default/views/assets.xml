@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="extend_rte" name="Extend RTE" inherit_id="web_editor.assets_editor">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/website_editor_default/static/src/js/extend_rte.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
