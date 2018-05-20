@@ -16,7 +16,60 @@
 }(function ($) {
     var tmpl = $.summernote.renderer.getTemplate();
 
-    // put it here to generate each tag icon individually
+    // dialogs for abbr
+
+    // core functions: range, dom
+    var range = $.summernote.core.range;
+    var dom = $.summernote.core.dom;
+
+    var getTextOnRange = function ($editable) {
+        $editable.focus();
+
+        var rng = range.create();
+
+        // if range on anchor, expand range with anchor
+        if (rng.isOnAnchor()) {
+        var anchor = dom.ancestor(rng.sc, dom.isAnchor);
+        rng = range.createFromNode(anchor);
+        }
+
+        return rng.toString();
+    };
+
+    // same dialog as video plugin
+    // css property position must be relative (z-index: 1050 ?)
+    var showAbbrDialog = function ($editable, $dialog, text) {
+        return $.Deferred(function (deferred) {
+            var $abbrDialog = $dialog.find('.note-abbr-dialog');
+            
+            // title to insert inside abbr tag
+            var $abbrTitle = $abbrDialog.find('.note-abbr-text'),
+                $abbrBtn = $abbrDialog.find('.note-abbr-btn');
+            
+            $abbrDialog.one('shown.bs.modal', function () {
+                $abbrTitle.val(text).on('input', function () {
+                    toggleBtn($abbrBtn, $abbrTitle.val());
+                }).trigger('focus');
+
+                $abbrBtn.click(function (event) {
+                    event.preventDefault();
+                    deferred.resolve($abbrTitle.val());
+                    $abbrDialog.modal('hide');
+                });
+            }).one('hidden.bs.modal', function () {
+                $abbrTitle.off('input');
+                $abbrBtn.off('click');
+
+                if (deferred.state() === 'pending') {
+                    deferred.reject();
+                }
+            }).modal('show');
+        });
+    };
+
+    // other tags
+
+    // generate each tag icon individually
     self.generateBtn = function(tag, tooltip) {
         var char = tag.slice(0,1).toUpperCase();
         return tmpl.button('<'+tag+'>'+char+'</'+tag+'>', {
@@ -35,32 +88,51 @@
                 em: function (lang, options) { return generateBtn('em',          'Accentuate'); },
               mark: function (lang, options) { return generateBtn('mark',         'Highlight'); },
                  q: function (lang, options) { return generateBtn('q',      'Short quotation'); },
-//               cite: function (lang, options) { return generateBtn('cite',   'Title of a work'); },
-              abbr: function (lang, options) { return generateBtn('abbr',   'Acronym, abbrev'); },
+              cite: function (lang, options) { return generateBtn('cite',   'Title of a work'); },
+//              abbr: function (lang, options) { return generateBtn('abbr',   'Acronym, abbrev'); },
                dfn: function (lang, options) { return generateBtn('dfn',     'Term to define'); },
                del: function (lang, options) { return generateBtn('del',       'Deleted text'); },
                ins: function (lang, options) { return generateBtn('ins',      'Inserted text'); },
             figure: function (lang, options) { return generateBtn('figure',  'A visual media'); },
         figcaption: function (lang, options) { return generateBtn('figcaption', 'Media title'); },
 
-            cite: function (lang, options) { 
+              abbr: function (lang, options) {
+                    return tmpl.button('<abbr>A</abbr>', {
+                        event: 'showAbbrDialog',
+                        title: 'Acronym, abbrev',
+                        value: 'abbr',
+                        hide: true
+                    });
+              },
+        },
+        
+        dialogs: {
+            abbr: function (lang) {
                 var body =  '<div class="form-group row">' +
                                 '<label>Title</label>' +
-                                '<input class="note-image-url form-control col-md-12" type="text" />' +
+                                '<input class="note-abbr-text form-control col-md-12" type="text" />' +
                             '</div>';
-
-                var footer = '<button href="#" class="btn btn-primary note-image-btn"> insert </button>';
+                var footer = '<button href="#" class="btn btn-primary note-abbr-btn disabled" disabled> Insert </button>';
                 // className, title, body, footer
-//                 return tmpl.button('<cite>C</cite>', {
-                    event: show tmpl.dialog('', 'Title of a work' , body, footer);
-//                     value: 'cite',
-//                     title: 'Title of a work',
-//                 });
-            },
+                return tmpl.dialog('note-abbr-dialog', 'Title of a work' , body, footer);
+            }
         },
+
 
         // code adapted from summernote-add-text-tags plugin
         events: {
+            showAbbrDialog: function (event, editor, layoutInfo, value) {
+                var $dialog = layoutInfo.dialog(),
+                    $editable = layoutInfo.editable(),
+                    text = getTextOnRange($editable);
+                    // text will be inside input
+                showAbbrDialog($editable, $dialog, text).then(function (text) {
+                    var tag = createTagNode(text);
+                    // event, editor, layoutInfo, value
+                    semantic_tags('semantic_tags', editor, layoutInfo, tag);
+                });
+            },
+
             semantic_tags: function (event, editor, layoutInfo, value) {
                 var self = this;
                 self.areDifferentBlockElements = function(startEl, endEl) {
