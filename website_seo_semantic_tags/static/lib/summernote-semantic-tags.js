@@ -73,6 +73,7 @@
     var createAbbrNode = function (title) {
         var $abbr = $('<abbr>')
             .attr('title', title);
+        return $abbr;
     }
 
     // other tags
@@ -131,20 +132,26 @@
         },
 
 
-        // code adapted from summernote-add-text-tags plugin
         events: {
             showAbbrDialog: function (event, editor, layoutInfo, value) {
                 var $dialog = layoutInfo.dialog(),
                     $editable = layoutInfo.editable(),
                     text = getTextOnRange($editable);
-                    // text will be inside input
+                    
+                editor.saveRange($editable);
+                // text will be inside input
                 showAbbrDialog($editable, $dialog, text).then(function (text) {
-                    var tag = createTagNode(text);
-                    // event, editor, layoutInfo, value
-                    semantic_tags('semantic_tags', editor, layoutInfo, tag);
+                    var $node = createAbbrNode(text);
+
+                    if ($node) {
+                        editor.insertNode($editable, $node);
+                    }
+                }).fail(function () {
+                    // when cancel button clicked
+                    editor.restoreRange($editable);
                 });
             },
-
+            // code adapted from summernote-add-text-tags plugin
             semantic_tags: function (event, editor, layoutInfo, value) {
                 var self = this;
                 self.areDifferentBlockElements = function(startEl, endEl) {
