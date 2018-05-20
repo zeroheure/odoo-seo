@@ -43,16 +43,19 @@
             var $abbrDialog = $dialog.find('.note-abbr-dialog');
             
             // title to insert inside abbr tag
-            var $abbrTitle = $abbrDialog.find('.note-abbr-text'),
+            var $abbrAbbr = $abbrDialog.find('.note-abbr-abbr'),
+                $abbrTitle = $abbrDialog.find('.note-abbr-title'),
                 $abbrBtn = $abbrDialog.find('.note-abbr-btn');
             
             $abbrDialog.one('shown.bs.modal', function () {
-                $abbrTitle.val(text).on('input', function () {
+                $abbrAbbr.val(text).on('input', function () {
+
                     toggleBtn($abbrBtn, $abbrTitle.val());
                 }).trigger('focus');
 
                 $abbrBtn.click(function (event) {
                     event.preventDefault();
+
                     deferred.resolve($abbrTitle.val());
                     $abbrDialog.modal('hide');
                 });
@@ -66,6 +69,11 @@
             }).modal('show');
         });
     };
+    
+    var createAbbrNode = function (title) {
+        var $abbr = $('<abbr>')
+            .attr('title', title);
+    }
 
     // other tags
 
@@ -93,8 +101,9 @@
                dfn: function (lang, options) { return generateBtn('dfn',     'Term to define'); },
                del: function (lang, options) { return generateBtn('del',       'Deleted text'); },
                ins: function (lang, options) { return generateBtn('ins',      'Inserted text'); },
-            figure: function (lang, options) { return generateBtn('figure',  'A visual media'); },
-        figcaption: function (lang, options) { return generateBtn('figcaption', 'Media title'); },
+                // will rather  backport existing plugin
+//             figure: function (lang, options) { return generateBtn('figure',  'A visual media'); },
+//         figcaption: function (lang, options) { return generateBtn('figcaption', 'Media title'); },
 
               abbr: function (lang, options) {
                     return tmpl.button('<abbr>A</abbr>', {
@@ -109,12 +118,15 @@
         dialogs: {
             abbr: function (lang) {
                 var body =  '<div class="form-group row">' +
-                                '<label>Title</label>' +
-                                '<input class="note-abbr-text form-control col-md-12" type="text" />' +
+                                '<label>Accronym or abbreviation</label>' +
+                                '<input class="note-abbr-abbr form-control col-md-12" type="text" />' +
+                            '</div><div class="form-group row">' +
+                                '<label>Definition</label>' +
+                                '<input class="note-abbr-title form-control col-md-12" type="text" />' +
                             '</div>';
-                var footer = '<button href="#" class="btn btn-primary note-abbr-btn disabled" disabled> Insert </button>';
+                var footer = '<button href="#" class="btn btn-primary note-abbr-btn"> Insert </button>';
                 // className, title, body, footer
-                return tmpl.dialog('note-abbr-dialog', 'Title of a work' , body, footer);
+                return tmpl.dialog('note-abbr-dialog', 'Acronym definition' , body, footer);
             }
         },
 
