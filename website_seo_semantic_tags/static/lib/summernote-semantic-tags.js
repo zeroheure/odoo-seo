@@ -22,6 +22,7 @@
     var range = $.summernote.core.range;
     var dom = $.summernote.core.dom;
 
+    // text that goes in Abbreviation field
     var getTextOnRange = function ($editable) {
         $editable.focus();
 
@@ -36,8 +37,14 @@
         return rng.toString();
     };
 
+    // allow to click
+    var toggleBtn = function ($btn, isEnable) {
+        $btn.toggleClass('disabled', !isEnable);
+        $btn.attr('disabled', !isEnable);
+    };
+
     // same dialog as video plugin
-    // css property position must be relative (z-index: 1050 ?)
+    // css property position must be relative
     var showAbbrDialog = function ($editable, $dialog, text) {
         return $.Deferred(function (deferred) {
             var $abbrDialog = $dialog.find('.note-abbr-dialog');
@@ -52,20 +59,22 @@
 
                     toggleBtn($abbrBtn, $abbrTitle.val());
                 }).trigger('focus');
+                
+                $abbrTitle.val(title).on('input');
 
                 $abbrBtn.click(function (event) {
                     event.preventDefault();
 
-                    deferred.resolve($abbrTitle.val());
+//                     deferred.resolve($abbrTitle.val());
                     $abbrDialog.modal('hide');
                 });
             }).one('hidden.bs.modal', function () {
                 $abbrTitle.off('input');
                 $abbrBtn.off('click');
 
-                if (deferred.state() === 'pending') {
-                    deferred.reject();
-                }
+//                 if (deferred.state() === 'pending') {
+//                     deferred.reject();
+//                 }
             }).modal('show');
         });
     };
