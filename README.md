@@ -13,8 +13,8 @@ Search engines can still found those links from Sitemap, which is automaticaly p
 
 ## Available addons
 
-        addons              |   version  |  summary
---------------------------- | ---------- | ---------
+addons | version | summary
+------ | ------- | -------
 website_editor_default      | 10.0.1.0.0 | Extend web editor default tags (not yet ready)
 website_editor_text_tags    | 10.0.1.0.0 | Text tags editor plugin
 website_seo_breadcrumb      | 10.0.1.0.0 | Add structured datas and H6 tags in breadcrumb (SERP & page rank)
