@@ -36,7 +36,7 @@
                     dropdown: tplDropdown(dropdown, 'text-tags', 'ul')
                 });
             },
-    });
+    }});
 
 }));
 
