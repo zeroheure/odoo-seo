@@ -1,6 +1,6 @@
 # Website SEO Footer
 
-This module remove Heading tags and obfuscate default links from search engines (for Page Rank Sculpture) :
+This module change HTML code in footer, it removes Heading tags (Hn) and obfuscate default links (for search engines Page Rank Sculpture) :
 
 - Headings in footer break the page readibility for search engines, which confuse them on page meaning.
 - Footer links are not the biggest SEO problem, but they have bad effect on page rank, as you should allways control what pages got page rank from important pages. Purpose of obfuscated links is to not send "Page Rank Juice" to each page linked in footer. Links are not obfuscated to visitors, only to search engines (as long as they ignore Javascript form). TROUVER UN LIEN EXPLICATIF 

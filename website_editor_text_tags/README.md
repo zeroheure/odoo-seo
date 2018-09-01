@@ -4,7 +4,7 @@ This is a port of the Summernote [Add Text Tags](https://github.com/tylerecoutur
 
 It adds a few elements in the font part of the toolbar :
 
-* [Inline text elements]https://getbootstrap.com/docs/3.3/css/#type-inline-text):
+* [Inline text elements](https://getbootstrap.com/docs/3.3/css/#type-inline-text)
   * `<mark>` highlighted text
   * `<small>` fine print
   * `<ins>` indicate text added to a document
@@ -12,6 +12,7 @@ It adds a few elements in the font part of the toolbar :
 
 * [Inline code elements](https://getbootstrap.com/docs/3.3/css/#code)
   * `<code>` for inline code snippets
+  * `<samp>` for sample output
   * `<kbd>` for indicating user input.
   * `<var>` for indicating variables.
 
@@ -23,6 +24,7 @@ It adds a few elements in the font part of the toolbar :
 ## Contributors
 
 - Xavier Brochard zeroheure@zeroheure.info
+- tylerecouture, author of the Summernote [Add Text Tags](https://github.com/tylerecouture/summernote-add-text-tags) plugin
 
 ## Maintainer
 

@@ -16,9 +16,9 @@ It adds a few elements in the font part of the toolbar :
 -  `Inline code elements`_
 
    -  ``<code>`` for inline code snippets
+   -  ``<samp>`` for sample output
    -  ``<kbd>`` for indicating user input.
    -  ``<var>`` for indicating variables.
-   -  ``<samp>`` for sample output
 
 Limitations
 -----------
@@ -32,7 +32,7 @@ Contributors
 ------------
 
 -  Xavier Brochard zeroheure@zeroheure.info
--  tylerecouture, author of the Summernote plugin
+-  tylerecouture, author of the Summernote `Add Text Tags`_ plugin
 
 Maintainer
 ----------
