@@ -33,6 +33,9 @@ website_seo_semantic_tags   | 10.0.1.0.0 | Replace bold, italic, etc. icons with
 
 * SEO menu : obfuscate some menu links
 * SEO description size : configurable size of meta description field 
+* How to Use XML Sitemaps to Boost SEO https://www.searchenginejournal.com/xml-sitemaps-seo/266907/
+
+
 
 ## Other informations 
 * For SEO advices see http://www.abondance.com (french)
