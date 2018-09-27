@@ -23,8 +23,8 @@ It adds a few elements in the font part of the toolbar :
   
 ## Contributors
 
-- Xavier Brochard zeroheure@zeroheure.info
-- tylerecouture, author of the Summernote [Add Text Tags](https://github.com/tylerecouture/summernote-add-text-tags) plugin
+- Tylerecouture, authored the Summernote [Add Text Tags](https://github.com/tylerecouture/summernote-add-text-tags) plugin
+- Xavier Brochard zeroheure@zeroheure.info, backported Summernote module, created Odoo module
 
 ## Maintainer
 
