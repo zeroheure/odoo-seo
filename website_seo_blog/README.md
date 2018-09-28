@@ -10,7 +10,7 @@ Additionaly, the module build breadcrumb with Heading tag (<h6>) to give more im
 
 ## Blog home page
 
-Subtitle switch from H3 to H2 which is better for Google. Blog description gain microdatas and is surround by h6.
+Subtitle switch from H3 to H2 which is better for Google. Blog description gain microdatas and is surround by h5.
 
 ## Footer
 

@@ -41,8 +41,8 @@
         </xpath>
     </template>
 
-    <template id="blog_home" inherit_id="website_blog.blog_post_short" name="SEO Blog">
-        <xpath expr="//section[hasclass='mb0']" position="replace">
+    <template id="title" inherit_id="website_blog.blog_post_short" name="SEO Blog">
+        <xpath expr="//section[@class='mb0']" position="replace">
             <section class="mb0">
                 <div class="container">
                     <div class="row">
@@ -53,6 +53,15 @@
                     </div>
                 </div>
             </section>
+        </xpath>
+    </template>
+    
+    <template id="about_us" inherit_id="website_blog.opt_blog_rc_about_us" name="About Us" >
+        <xpath expr="//section[@class='mt32']/p" position="replace">
+            <h5 itemprop="about" itemscope="" itemtype="http://schema.org/Blog">
+                Write a small text here for when <b>new visitors</b> find your website
+                through your <b>blog entries</b>, referenced in Google.
+            </h5>
         </xpath>
     </template>
 </odoo>
