@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Copyright 2018 Xavier brochard <zeroheure@zeroheure.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+    <!-- website_blog -->
+    <template id="breadcrumb" name="SEO Breadcrumb Blog"
+            inherit_id="website_blog.blog_post_complete" active="False" customize_show="True">
+        <xpath expr="//ol" position="replace">
+            <h6 class="breadcrumb">
+                <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a t-attf-href="#{blog_url(tag=None, date_begin=None, date_end=None)}" itemprop="url"><span itemprop="name" t-field="blog.name" /></a>
+                        <meta itemprop="position" content="1" t-set="p" t-value="1" />
+                    </span>
+                    <t t-if="tag">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <a t-attf-href="#{blog_url(date_begin=None, date_end=None)}" itemprop="url"><span itemprop="name" t-field="tag.name" /></a>
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" t-set="p" t-value="p+1" />
+                    </span>
+                    </t>
+                    <t t-if="date">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <a t-attf-href="#{blog_url(tag=None)}" itemprop="url"><span itemprop="name" t-esc="date" /></a>
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" t-set="p" t-value="p+1" />
+                    </span>
+                    </t>
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <span class="active" itemprop="name" t-field="blog_post.name" />
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" />
+                    </span>
+                </span>
+            </h6>
+        </xpath>
+    </template>
+
+    <!-- from website_blog -->
+    <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="True" name="SEO Footer News Blog">
+        <xpath expr="//div[@id='info']/ul" position="inside">
+            <li><button type="button" class="seo_obfuscated_link" 
+                        t-attf-onclick="javascript:location.href='/blog/{{ %(website_blog.blog_blog_1)d }}';">News</button></li>
+        </xpath>
+    </template>
+
+    <template id="blog_home" inherit_id="website_blog.blog_post_short" name="SEO Blog">
+        <xpath expr="//section[hasclass='mb0']" position="replace">
+            <section class="mb0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mb32 mt16 text-center">
+                            <h1 t-field="blog.name"/>
+                            <h2 class="text-muted" t-field="blog.subtitle"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+</odoo>
