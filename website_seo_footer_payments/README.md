@@ -1,8 +1,14 @@
 # Website SEO Footer Payments
 
-Remove Heading tag (H4) from payments method list in footer and obfuscate additional links.
- 
-Purpose of obfuscated links is to not send "Page Rank juice" to each page linked in footer. Links are not obfuscated to visitors, only to search engines (as long as they ignore Javascript form).
+Remove Heading tag (H4) from payments method list in footer. Headings in footer break the page readibility for search engines, which confuse them on page meaning.
+
+## See also
+For complete SEO footer, one should install
+
+- SEO Footer (website_seo_footer)
+- SEO Footer More (website_seo_footer_more)
+- SEO Footer Forum (website_seo_footer_forum)
+- Blog Footer is included in SEO Blog module (website_seo_blog).
 
 ## Contributors
 
