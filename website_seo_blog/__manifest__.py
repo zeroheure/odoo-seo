@@ -3,7 +3,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     "name": "SEO Blog",
-    "summary": "Add structured datas and better heading tags to blog",
+    "summary": "schema.org microdatas and better heading tags in title, about and breadcrumb.",
     "version": "10.0.1.0.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
