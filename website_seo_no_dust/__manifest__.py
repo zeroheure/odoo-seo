@@ -7,8 +7,12 @@
     "version": "10.0.1.0.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
+    "support" : "support@zeroheure.info",
     "author": "Xavier Brochard, zeroheure.info",
     "license": "LGPL-3",
+    "price":"100",
+    "currency":"EUR",
+    "images": ['images/main_screenshot.png'],
     "application": False,
     "installable": True,
     "depends": [
