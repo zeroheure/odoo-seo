@@ -9,7 +9,7 @@ Odoo limit meta Title to 70 characters, but Google doesn't have such limit. The 
 
 Title length is not otherwise limited. This module allows 120 characters in meta Title (maxTitleSize).
 
-Since november 2017 Google increase the meta description length to nearly 300 characters. This module allows 300 characters in meta Description (maxDescriptionSize). Note that the description is not related to SEO, but to Search Engines Result Page (SERP). Google will not use it for referencing your page but to print its search results. Google will pick your description or not, if it is irelevant to search keywords
+Since november 2017 Google increase the meta description length to nearly 300 characters. This module allows 320 characters in meta Description (maxDescriptionSize). Note that the description is not related to SEO, but to Search Engines Result Page (SERP). Google will not use it for referencing your page but to print its search results. Google will pick your description or not, if it is relevant to search keywords
 
 Additionaly, this module will display preview with Google's color and truncate URLs and title according to Google's rules.
 
@@ -20,7 +20,7 @@ Additionaly, this module will display preview with Google's color and truncate U
 - check if Title or Description is too short
 - check if site name (website_name) is in Title (and position)
 - configurable length and other variables (need controler file)
-- MS Bing options
+- Bing, Yandex, Baidu options
 
 ### References
 
