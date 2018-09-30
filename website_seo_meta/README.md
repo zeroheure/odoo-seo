@@ -1,4 +1,4 @@
-# Website SEO meta tags
+# Website SEO meta
 
 Increase length of meta title and meta description fields, better Google preview, add tips and ...
 

@@ -2,7 +2,7 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "SEO Meta tags",
+    "name": "SEO Meta",
     "summary": "Improve meta fields according to new Google rules.",
     "version": "10.0.1.0.0",
     "category": "Website",

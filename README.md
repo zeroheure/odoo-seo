@@ -17,7 +17,7 @@ website_editor_default      | 10.0.1.0.0 | Extend web editor default tags (not y
 website_editor_text_tags    | 10.0.1.0.0 | Text tags editor plugin
 website_seo_semantic_tags   | 10.0.1.0.0 | Replace bold, italic, etc. with semantic tags (page rank)
 website_seo_no_dust         | 10.0.1.0.0 | Remove URLs parameters (dublicate content)
-website_seo_meta_tags       | 10.0.1.0.0 | Increase size of meta fields (Google update, nov. 2017) (SERP)
+website_seo_meta            | 10.0.1.0.0 | Increase size of meta fields (Google update, nov. 2017) (SERP)
 website_seo_footer          | 10.0.1.0.0 | Remove headings and obfuscate links in footer (page rank)
 website_seo_footer_forum    | 10.0.1.0.0 | Obfuscate forum links (page rank)
 website_seo_footer_more     | 10.0.1.0.0 | Obfuscate additional links (page rank)

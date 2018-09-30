@@ -8,10 +8,10 @@
             <input type="text" name="seo_page_title" class="form-control" t-att-maxlength="widget.maxTitleSize" size="70"/>
             <p><span class="text-muted">Rule is to start with page title, followed by category and site name. But home page must start with site name followed by the page title. Google will display around 70 characters, Bing 40. You can put more.</span></p>
         </t>
-        <t t-jquery="textarea" t-operation="replace">
+        <t t-jquery="textarea[name='seo_page_description']" t-operation="replace">
             <!-- Google truncate to nearly 300 characters (november 2017) -->
             <textarea name="seo_page_description" class="form-control" rows="5" cols="70" t-att-maxlength="widget.maxDescriptionSize"/>
-            <p><span class="text-muted">Put here at least 200 characters, maximum around 300. Google will display nearly 150 char in its search results ("SERP"), but can use the other sentences if they are relevant to the search query.</span></p>
+            <p><span class="text-muted">Put here at least 200 characters, maximum around 300. Google will display nearly 160 char in its search results ("SERP"), but can use the other sentences if they are relevant to the search query.</span></p>
         </t>
     </t>
 

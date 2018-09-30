@@ -17,7 +17,7 @@ var qweb = core.qweb;
 
 ajax.loadXML('/website/static/src/xml/website.seo.xml', qweb);
 // reworked header 
-ajax.loadXML('/website_seo_meta_size/static/src/xml/header.xml', qweb);
+ajax.loadXML('/website_seo_meta/static/src/xml/header.xml', qweb);
 
     // This replaces \b, because accents(e.g. à, é) are not seen as word boundaries.
     // Javascript \b is not unicode aware, and words beginning or ending by accents won't match \b
