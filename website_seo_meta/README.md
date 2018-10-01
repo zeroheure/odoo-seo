@@ -15,9 +15,9 @@ Additionaly, this module will display preview with Google's color and truncate U
 
 ## TODO
 
-- words count in Title : between 10 to 12 words
+- ~~words count in Title : between 10 to 12 words~~
 - print product category for use in Title
-- check if Title or Description is too short
+- ~~check if Title or Description is too short~~
 - check if site name (website_name) is in Title (and position)
 - configurable length and other variables (need controler file)
 - Bing, Yandex, Baidu options
