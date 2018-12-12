@@ -2,7 +2,7 @@
 
 This module change HTML code in footer, it removes Heading tags (Hn) and obfuscate default links. WARNING : The module will re-enable the default Odoo automatic footer with Headings removed and obfuscated links. The module will replace your customized footer, but will not rewrite it by improving it. Once installed, you will have to customize and recreate texts and links manualy.
 
-To keep some links visible to search engines, add them in related pages in a contextual manner : included in a paragraph of text with explanations ; it will be better for search engine analyze.
+To keep some links visible to search engines, add them in related pages in a contextual manner : included in a paragraph of text with explanations — it will be better for search engine analyze.
 
 ## Why do you need this module ?
 
