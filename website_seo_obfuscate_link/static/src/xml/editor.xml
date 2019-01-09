@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- Link Dialog (allows to choose a style and content for a link on the page) -->
+    <t t-extend="web_editor.dialog.link">
+        <t t-jquery="input[class='window-new']" t-operation="append">
+            <label><input class="obfuscate" type="checkbox"/>Obfuscate</label>
+        </t>
+    </t>
+
+</templates>
+<!--
+        <ul class="list-group">
+            <li class="list-group-item form-group clearfix active">
+                <div class="pull-right" style="display: none;">
+                    <label>
+                        <input class="window-new" type="checkbox"/>Open in new window</label>
+                </div>
+                <h4 class="list-group-item-heading">
+                    <label class="control-label" for="link-external">URL or Email Address
+                    </label>
+                </h4>
+                <input class="form-control url email-address url-source" id="link-external" placeholder="https://www.odoo.com" type="text"/>
+            </li>
+        </ul>
+-->    
