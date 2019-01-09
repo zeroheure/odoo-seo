@@ -24,8 +24,8 @@
  
         more: function (lang, options) {
                 var tplDropdown = $.summernote.renderer.getTemplate().dropdown;
-                var tplButton = $.summernote.renderer.getTemplate().button;
-                var dropdown = [
+                var tplButton   = $.summernote.renderer.getTemplate().button;
+                var dropdown    = [
                     '<div class="note-align btn-group text-tags" style="min-width: 275px;">',
                     strikethrough + superscript + subscript + hr + height,
                     '</div>'

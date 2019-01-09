@@ -6,7 +6,7 @@ odoo.define('website_editor_default.extend_rte', function (require) {
     ajax.loadJS('/website_editor_default/static/lib/summernote-default-tags.js');
     
     rte.Class.include({
-
+        // update rte.js config
         config: function ($editable) {
             var config = this._super.apply(this, arguments);
             config.airPopover.push( 
