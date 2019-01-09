@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     
-    <!-- custom footer -->
+    <!-- inherit custom footer -->
     <template id="footer_custom" inherit_id="website.layout" customize_show="True" active="False" name="SEO Footer">
         <xpath expr="//div[@id='footer']" position="replace">
             <div class="oe_structure" id="footer">
@@ -33,7 +33,7 @@
         </xpath>
     </template>
 
-    <!-- inherit custom footer    -->
+    <!-- inherit default footer    -->
     <template id="footer_default" inherit_id="website.footer_default" customize_show="True" active="True" name="SEO Automatic Footer">
         <xpath expr="//div[@id='footer']" position="replace">
             <div id="footer" class="container hidden-print">
