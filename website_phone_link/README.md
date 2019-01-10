@@ -2,6 +2,11 @@
 Clickable Phone Link
 This module add clickable links to phone and email in your website footer (and in the pre-header for Treehouse, Zap and Bistro themes for normal and mobile view).
 
+TODO separate module for themes and SEO footer
+Treehouse based themes
+add clickable link in pre-header
+phone number allways visible in mobile view
+
 ## Why do you need this module ?
 
 Currently mobile users can't clik on phone number to call you. That's a very bad user experience.
