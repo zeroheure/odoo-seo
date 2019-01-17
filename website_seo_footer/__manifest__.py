@@ -17,7 +17,6 @@
     "installable": True,
     "depends": [
         "website",
-        "website_seo_obfuscate_link",
     ],
     "data": [
         "views/seo_footer.xml",
