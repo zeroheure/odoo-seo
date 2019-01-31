@@ -10,7 +10,7 @@
     "support" : "support@zeroheure.info",
     "author": "Xavier Brochard, zeroheure.info",
     "license": "LGPL-3",
-    "price":"10",
+    "price":"20",
     "currency":"EUR",
     "images": ['static/description/module_image.png'],
     "application": False,
