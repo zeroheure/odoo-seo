@@ -4,7 +4,7 @@
 {
     'name': 'SEO Meta',
     'summary': 'Improve meta fields according to new Google rules.',
-    'version': '10.0.1.0.0',
+    'version': '9.0.1.0.0',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',
