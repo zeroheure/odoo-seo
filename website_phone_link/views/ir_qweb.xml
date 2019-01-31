@@ -1,4 +1,4 @@
-<odoo>
+<openerp>
 <!-- base.ir_qweb.xml -->
 <template id="contact" inherit_id="base.contact">
     
@@ -15,4 +15,4 @@
         <a style="color:unset;" t-attf-href="mailto:{{ email }}" t-esc="email"/>
     </xpath>
 </template>
-</odoo>
+</openerp>

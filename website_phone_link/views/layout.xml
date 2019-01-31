@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<openerp>
 
     <!-- inherit default and SEO footer    -->
     <template id="footer_default" inherit_id="website.footer_default" active="True" name="Footer Phone Link">
@@ -25,4 +25,4 @@
     </template>
 -->
 
-</odoo>
+</openerp>

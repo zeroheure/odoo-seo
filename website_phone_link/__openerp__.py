@@ -4,7 +4,7 @@
 {
     'name': 'Click and call',
     'summary': 'Click and call phone number for mobile usability.',
-    'version': '9.0.1.0.0',
+    'version': '8.0.1.0.0',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',

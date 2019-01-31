@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright Xavier Brochard <xavier@zeroheure.info>
      License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
-<odoo>
+<openerp>
 
 <template id="assets" inherit_id="website.assets_editor" name="Website Editor Assets">
     <xpath expr="//script[@src='/website/static/src/js/website.seo.js']" position="replace">
@@ -9,4 +9,4 @@
     </xpath>
 </template>
 
-</odoo>
+</openerp>
