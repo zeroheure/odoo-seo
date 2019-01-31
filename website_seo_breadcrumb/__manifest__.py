@@ -4,7 +4,7 @@
 {
     "name": "SEO Breadcrumb",
     "summary": "Build Breadcrumb with structured datas and heading tags",
-    "version": "10.0.1.0.0",
+    "version": "10.0.0.0.1",
     "category": "Website",
     "website": "https://zeroheure.info/",
     "support" : "support@zeroheure.info",

@@ -4,7 +4,7 @@
 {
     "name": "SEO Obfuscate link",
     "summary": "Extend web editor to obfuscate links from search engines (for Page Rank Sculpture). Use theme color for link.",
-    "version": "10.0.1.0.0",
+    "version": "10.0.0.0.1",
     "category": "Website",
     "website": "https://zeroheure.info/",
     "support" : "support@zeroheure.info",

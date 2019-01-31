@@ -4,7 +4,7 @@
 {
     "name": "Technical Tags",
     "summary": "Add text related tags in website editor.",
-    "version": "10.0.1.0.0",
+    "version": "10.0.0.0.1",
     "category": "Website",
     "website": "https://zeroheure.info/",
     "support" : "support@zeroheure.info",

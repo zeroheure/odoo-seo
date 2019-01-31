@@ -4,7 +4,7 @@
 {
     "name": "Editor defaults options",
     "summary": "Enable all defaults options in website editor (more icons).",
-    "version": "10.0.0.1.0",
+    "version": "10.0.0.0.1",
     "category": "Website",
     "website": "https://zeroheure.info/",
     "support": "support@zeroheure.info",

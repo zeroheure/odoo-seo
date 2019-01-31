@@ -2,8 +2,8 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    "name": "Phone link",
-    "summary": "Click to call phone number for mobile usability.",
+    "name": "Click and call",
+    "summary": "Click and call phone number for mobile usability.",
     "version": "10.0.1.0.0",
     "category": "Website",
     "website": "https://zeroheure.info/",
