@@ -22,6 +22,4 @@
     'images': [
         'static/description/module_image.png',
     ],
-    'price': 20,
-    'currency':'EUR',
 }
