@@ -11,18 +11,4 @@
         </xpath>
     </template>
 
-    <!--  pre-header in treehouse based themes  normal and adptative view  -->
-<!--
-    <template id="preheader" inherit_id="theme_treehouse.preheader" active="False" name="preHeader Phone Link">
-        <xpath expr="//span[@t-field='res_company.phone']" position="replace">
-            <a t-attf-href="tel:{{ res_company.phone }}" t-field="res_company.phone"/>
-        </xpath>
-        <xpath expr="//li[@class='home visible-xs-inline-block']" position="after">
-            <li class="home visible-xs-inline-block">
-                <a t-attf-href="tel:{{ res_company.phone }}"><i class="fa fa-phone fa-lg"/><span t-field="res_company.phone"></span></a>
-            </li>
-        </xpath>
-    </template>
--->
-
 </odoo>
