@@ -12,7 +12,7 @@
     </template>
 
     <!--  pre-header in treehouse based themes  normal and adptative view  -->
-    <template id="preheader" inherit_id="theme_treehouse.preheader" active="False" name="preHeader Phone Link">
+    <template id="preheader" inherit_id="theme_treehouse.preheader" active="True" name="preHeader Phone Link">
         <xpath expr="//span[@t-field='res_company.phone']" position="replace">
             <a t-attf-href="tel:{{ res_company.phone }}" t-field="res_company.phone"/>
         </xpath>
