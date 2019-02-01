@@ -1,0 +1,18 @@
+<odoo>
+<!-- base.ir_qweb.xml -->
+<template id="contact" inherit_id="base.contact">
+    
+    <xpath expr="//i[@class='fa fa-map-marker']" position="replace">
+        <i t-if="not options.get('no_marker')" class='fa fa-map-marker fa-fw'/>
+    </xpath>
+    <xpath expr="//span[@t-esc='phone']" position="replace">
+        <a style="color:unset;" t-attf-href="tel:{{ phone }}" t-esc="phone"/>
+    </xpath>
+    <xpath expr="//span[@t-esc='mobile']" position="replace">
+        <a style="color:unset;" t-attf-href="tel:{{ mobile }}" t-esc="mobile"/>
+    </xpath>
+    <xpath expr="//span[@t-esc='email']" position="replace">
+        <a style="color:unset;" t-attf-href="mailto:{{ email }}" t-esc="email"/>
+    </xpath>
+</template>
+</odoo>
