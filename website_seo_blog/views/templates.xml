@@ -3,7 +3,7 @@
 <!-- Copyright 2018 Xavier brochard <zeroheure@zeroheure.com>
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
     <!-- website_blog -->
-    <template id="breadcrumb" name="SEO Breadcrumb Blog"
+    <template id="breadcrumb" name="SEO Blog breacrumb"
             inherit_id="website_blog.blog_post_complete" active="False" customize_show="True">
         <xpath expr="//ol" position="replace">
             <h6 class="breadcrumb">
@@ -34,14 +34,13 @@
     </template>
 
     <!-- from website_blog -->
-    <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="True" name="SEO Footer News Blog">
-        <xpath expr="//div[@id='info']/ul" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" 
-                        t-attf-onclick="javascript:location.href='/blog/{{ %(website_blog.blog_blog_1)d }}';">News</button></li>
+    <template id="header_footer_custom" inherit_id="website.footer_default" active="True" name="SEO Blog footer">
+        <xpath expr="//div[@id='footer']/div/div/ul/li/a[@href='/blog/{{ %(website_blog.blog_blog_1)d }}']" position="replace">
+            <a onclick="javascript:document.location='/blog/{{ %(website_blog.blog_blog_1)d }}';" class="seo_obfuscated_link">News</a>
         </xpath>
     </template>
 
-    <template id="title" inherit_id="website_blog.blog_post_short" name="SEO Blog">
+    <template id="title" inherit_id="website_blog.blog_post_short" name="SEO Blog blog post">
         <xpath expr="//section[@class='mb0']" position="replace">
             <section class="mb0">
                 <div class="container">
