@@ -15,7 +15,6 @@
     'installable': True,
     'depends': [
         'website',
-        'theme_treehouse',
     ],
     'data': [
         'views/layout.xml',
