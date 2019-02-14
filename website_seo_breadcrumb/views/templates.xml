@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Xavier brochard <zeroheure@zeroheure.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="seo_breadcrumb" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='wrap']//ol" position="replace">
+            <h6 class="breadcrumb">
+                <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a t-att-href="keep(category=0)" itemprop="url"><span itemprop="name">Products</span></a>
+                        <meta itemprop="position" content="1" t-set="p" t-value="1" />
+                    </span>
+                    <t t-if="category">
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" itemprop="url">
+                            <span itemprop="name" t-field="category.name" />
+                        </a>
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" t-set="p" t-value="p+1" />
+                    </span>
+                    </t>
+                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> / 
+                        <span class="active" itemprop="name" t-field="product.name" />
+                        <meta itemprop="position" t-attf-content="{{ p + 1 }}" />
+                    </span>
+                </span>
+            </h6>
+        </xpath>
+  </template>
+</odoo>
