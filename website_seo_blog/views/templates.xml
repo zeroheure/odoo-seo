@@ -34,9 +34,9 @@
     </template>
 
     <!-- from website_blog -->
-    <template id="header_footer_custom" inherit_id="website.footer_default" active="True" name="SEO Blog footer">
-        <xpath expr="//div[@id='footer']/div/div/ul/li/a[@href='/blog/{{ %(website_blog.blog_blog_1)d }}']" position="replace">
-            <a onclick="javascript:document.location='/blog/{{ %(website_blog.blog_blog_1)d }}';" class="seo_obfuscated_link">News</a>
+    <template id="footer" inherit_id="website_blog.header_footer_custom" active="True" name="SEO Blog footer">
+        <xpath expr="//a[@href='/blog/%(website_blog.blog_blog_1)d']" position="replace">
+            <a onclick="javascript:document.location='/blog/%(website_blog.blog_blog_1)d';" class="seo_obfuscated_link">News</a>
         </xpath>
     </template>
 
