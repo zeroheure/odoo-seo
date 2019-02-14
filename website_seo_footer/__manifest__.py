@@ -10,7 +10,6 @@
     'support' : 'support@zeroheure.info',
     'author': 'Xavier Brochard, zeroheure.info',
     'license': 'LGPL-3',
-    'images': ['static/description/module_image.png'],
     'application': False,
     'installable': True,
     'depends': [
@@ -19,5 +18,8 @@
     'data': [
         'views/seo_footer.xml',
         'views/assets.xml',
+    ],
+    'images': [
+        'static/description/module_image.png'
     ],
 }
