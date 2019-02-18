@@ -2,7 +2,7 @@
 <odoo>
 <!-- Copyright 2018 Xavier brochard <zeroheure@zeroheure.com>
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
-    <!-- website_blog -->
+
     <template id="breadcrumb" name="SEO Blog breacrumb"
             inherit_id="website_blog.blog_post_complete" active="False" customize_show="True">
         <xpath expr="//ol" position="replace">
@@ -33,10 +33,13 @@
         </xpath>
     </template>
 
-    <!-- from website_blog -->
-    <template id="footer" inherit_id="website_blog.header_footer_custom" active="True" name="SEO Blog footer">
-        <xpath expr="//a[@href='/blog/%(website_blog.blog_blog_1)d']" position="replace">
-            <a onclick="javascript:document.location='/blog/%(website_blog.blog_blog_1)d';" class="seo_obfuscated_link">News</a>
+    <!-- remove Footer first -->
+    <template id="remove_blog" inherit_id="website_blog.header_footer_custom" name="SEO blog remove">
+        <xpath expr="//div[@id='info']/ul" position="replace"/>
+    </template>
+    <template id="footer" inherit_id="website.footer_default" active="True" name="SEO Footer News Blog Link">
+        <xpath expr="//div[@id='info']/ul" position="inside">
+            <li><a onclick="javascript:document.location='/blog/%(website_blog.blog_blog_1)d';" class="seo_obfuscated_link">News</a></li>
         </xpath>
     </template>
 
