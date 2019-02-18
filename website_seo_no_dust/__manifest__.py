@@ -4,14 +4,12 @@
 {
     'name': 'SEO no DUST',
     'summary': 'Remove URL parameters on product page to avoid Duplicate Content',
-    'version': '10.0.1.0.1',
+    'version': '10.0.1.0.0',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',
     'author': 'Xavier Brochard, zeroheure.info',
     'license': 'LGPL-3',
-    'price':'100',
-    'currency':'EUR',
     'application': False,
     'installable': True,
     'depends': [
