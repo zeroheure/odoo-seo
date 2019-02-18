@@ -17,7 +17,7 @@
     'installable': True,
     'depends': [
         'website_blog',
-        'website_seo_footer',
+
     ],
     'data': [
         'views/templates.xml',
