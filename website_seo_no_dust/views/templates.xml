@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<openerp>
 
     <!-- Product item used by /shop and /shop/cart -->
     <template id="products_item_no_dust" inherit_id="website_sale.products_item" name="Products item no DUST">
@@ -14,4 +14,4 @@
         </xpath>
     </template>
 
-</odoo>
+</openerp>
