@@ -4,7 +4,7 @@
 {
     'name': 'SEO Blog / News',
     'summary': 'schema.org microdatas and better heading tags in title, about and breadcrumb.',
-    'version': '10.0.1.0.0',
+    'version': '9.0.1.0.0',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',
