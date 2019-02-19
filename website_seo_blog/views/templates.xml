@@ -35,7 +35,7 @@
 
     <!-- remove Footer first -->
     <template id="remove_blog" inherit_id="website_blog.header_footer_custom" name="SEO blog remove">
-        <xpath expr="//div[@id='info']/ul" position="replace"/>
+        <xpath expr="//div[@id='info']/ul/li" position="replace"/>
     </template>
     <template id="footer" inherit_id="website.footer_default" active="True" name="SEO Footer News Blog Link">
         <xpath expr="//div[@id='info']/ul" position="inside">
