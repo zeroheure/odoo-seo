@@ -4,7 +4,7 @@
 {
     'name': 'SEO Footer Payments',
     'summary': 'Remove heading tag around Payment Method in footer.',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.0.1',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',
@@ -12,6 +12,9 @@
     'license': 'LGPL-3',
     'application': False,
     'installable': True,
+    'depends': [
+        'website_seo_footer',
+    ],
     'data': [
         'views/templates.xml',
     ],
