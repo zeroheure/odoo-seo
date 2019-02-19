@@ -4,7 +4,7 @@
 {
     'name': 'SEO Footer',
     'summary': 'Remove heading tags and obfuscate default links in footer (Page Rank Sculpture).',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.0.1',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',

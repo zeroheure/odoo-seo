@@ -44,8 +44,8 @@
         <xpath expr="//div[@id='footer']/div/div[2]/h4" position="replace">
             <strong class="seo_title4">Connect with us</strong>
         </xpath>
-        <xpath expr="//a[@href='/page/website.contactus']" position="replace">
-            <a onclick="javascript:document.location='/page/website.contactus';" class="seo_obfuscated_link">Contact us</a>
+        <xpath expr="//div[@id='info']/ul/li[1]" position="replace">
+            <li><a onclick="javascript:document.location='/page/website.contactus';" class="seo_obfuscated_link">Contact us</a></li>
         </xpath>
         <xpath expr="//div[@id='footer']/div/div[2]/h2" position="replace">
             <strong class="seo_title2">
