@@ -13,5 +13,13 @@
                 <a itemprop="name" t-att-href="'/shop/product/'+slug(product)+ ('?category='+str(category.id) if category else '')" t-att-content="product.name" t-field="product.name" />
         </xpath>
     </template>
-
+    <!--  sorting menu with javascript (and without href) stop Google to indexing  -->
+    <template id="sort" inherit_id="website_sale.sort" active="True" customize_show="True" name="SEO show Sort b">
+        <xpath expr="//div/ul/li/a" position="replace">
+            <a t-attf-onclick="javascript:document.location='{{keep('/shop', order=sortby[1])}}';">
+                <span t-raw="sortby[0]"/>
+            </a>                        
+        </xpath>
+    </template>
+    
 </odoo>
