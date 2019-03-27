@@ -3,8 +3,8 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'SEO no DUST',
-    'summary': 'Remove URL parameters on product page to avoid Duplicate Content',
-    'version': '9.0.1.0.0',
+    'summary': 'Avoid Duplicate Content in Google index by removing parameters and obfuscating sorting links.',
+    'version': '9.0.1.1.0',
     'category': 'Website',
     'website': 'https://zeroheure.info/',
     'support' : 'support@zeroheure.info',
