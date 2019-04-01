@@ -4,55 +4,55 @@
 <!-- Footer Partners Link website_crm_partner_assign -->
     <template id="footer_partner_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Partners">
         <xpath expr="//div[@id='info']/ul" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/partners';">Resellers</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/partners';">Resellers</button></li>
         </xpath>
     </template>
 <!-- Customer References Link website_customer-->
     <template id="footer_references_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Customer References">
         <xpath expr="//div[@id='info']/ul" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/customers';">Our References</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/customers';">Our References</button></li>
         </xpath>
     </template>
 <!-- Events website_event -->
     <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Events">
         <xpath expr="//ul[@id='products']" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/event';">Events</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/event';">Events</button></li>
         </xpath>
     </template>
 <!-- Jobs website_hr_recruitment -->
     <template id="job_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Job">
         <xpath expr="//div[@id='info']/ul" position="inside">
-        <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/jobs';">Jobs</button></li>
+        <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/jobs';">Jobs</button></li>
         </xpath>
     </template>
 <!-- Livechat support_website_livechat -->
     <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Rating Livechat">
         <xpath expr="//ul[@id='products']" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/livechat/';">Livechat Support</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/livechat/';">Livechat Support</button></li>
         </xpath>
     </template>
 <!-- Mailing lists website_mail_channel -->
     <template id="footer_mailing_list" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Mailing List">
         <xpath expr="//div[@id='info']/ul" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/groups';">Mailing List</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/groups';">Mailing List</button></li>
         </xpath>
     </template>
 <!-- Members website_membership -->
     <template id="footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Associations">
         <xpath expr="//div[@id='info']/ul" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/members';">Members</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/members';">Members</button></li>
         </xpath>
     </template>
 <!-- Project Customer Satisfaction website_rating_project -->
     <template id="header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Project Issue Rating Footer">
         <xpath expr="//ul[@id='products']" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/project/rating/';">Project Customer Satisfaction</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/project/rating/';">Project Customer Satisfaction</button></li>
         </xpath>
     </template>
 <!-- Slides website_slide -->
     <template id="slide_footer" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Slides">
         <xpath expr="//div[@id='info']//ul[@class='list-unstyled']" position="inside">
-            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:location.href='/slides';">Presentations</button></li>
+            <li><button type="button" class="seo_obfuscated_link" onclick="javascript:document.location='/slides';">Presentations</button></li>
         </xpath>
     </template>
 
