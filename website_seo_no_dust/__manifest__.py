@@ -2,7 +2,7 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    'name': 'SEO no DUST',
+    'name': 'SEO No DUST',
     'summary': 'Avoid Duplicate Content in Google index by removing parameters and obfuscating sorting links.',
     'version': '10.0.1.1.0',
     'category': 'Website',

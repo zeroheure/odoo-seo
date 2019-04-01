@@ -2,7 +2,7 @@
 # Copyright 2018 Xavier Brochard
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    'name': 'Click and call',
+    'name': 'Click And Call',
     'summary': 'Click and call phone number for mobile usability.',
     'version': '10.0.1.0.0',
     'category': 'Website',
