@@ -7,7 +7,7 @@ To keep some links visible to search engines, add them in related pages in a con
 ## Why do you need this module ?
 
 - Headings in footer break the page readibility for search engines, which confuse them on page meaning.
-- Footer links are not the biggest SEO problem, but they have bad effect on page rank, as you should allways control what pages got page rank from important pages. Purpose of obfuscated links is to not send "Page Rank Juice" to each page linked in footer. This is called Page Rank Sculpture. Links are not obfuscated to visitors, only to search engines (as long as they ignore links without href attribute). Note : the no-follow link attribute has no effect on page rank since 2016.
+- Footer links are not the biggest SEO problem, but they have bad effect on page rank, as you should allways control what pages receive page rank from important pages. Purpose of obfuscated links is to not send "Page Rank Juice" to each page linked in footer. This is called Page Rank Sculpture. Links are not obfuscated to visitors, only to search engines (as long as they ignore links without href attribute). Note : the no-follow link attribute has no effect on page rank since 2016.
 
 
 Reference : Google’s I/O developer conference, May 2018 : https://www.youtube.com/watch?time_continue=610&v=PFwUbgvpdaQ
