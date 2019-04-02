@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<openerp>
 
 <!-- Forum website_forum -->
     <template id="forum_header_footer_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Questions">
@@ -16,4 +16,4 @@
         </xpath>
     </template>
 
-</odoo>
+</openerp>

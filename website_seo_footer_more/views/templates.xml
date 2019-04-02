@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<openerp>
 
 <!-- Footer Partners Link website_crm_partner_assign -->
     <template id="footer_partner_custom" inherit_id="website_seo_footer.footer_default" customize_show="True" active="False" name="SEO Footer Partners">
@@ -56,4 +56,4 @@
         </xpath>
     </template>
 
-</odoo>
+</openerp>
